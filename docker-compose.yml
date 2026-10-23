@@ -1,0 +1,126 @@
+# Sistema de comparação de propostas — SP Águas
+# Tudo deste projeto fica aqui: banco, New API (com banco próprio), Ollama, leitor de PDF, API e telas.
+#
+# Subir tudo:            docker compose up -d --build
+# Ver o que está de pé:  docker compose ps
+# Acompanhar download dos modelos (só na 1ª vez): docker compose logs -f ollama-modelos
+# Logs da aplicação:     docker compose logs -f api
+# Parar (mantém dados):  docker compose down
+#
+# Endereços no seu computador:
+#   Aplicação: http://localhost:8080      New API (painel das IAs): http://localhost:3000
+
+name: licitacoes-spaguas   # nome do projeto no Docker Desktop (agrupa tudo deste sistema)
+
+services:
+  # ---------------------------------------------------------------- banco da aplicação
+  postgres:
+    image: postgres:16-alpine
+    container_name: licit-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-licitacoes}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD no .env}
+      POSTGRES_DB: ${POSTGRES_DB:-licitacoes}
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-licitacoes}"]
+      interval: 5s
+      retries: 20
+
+  # ---------------------------------------------------------------- New API e o banco dele
+  newapi-db:
+    image: postgres:16-alpine
+    container_name: licit-newapi-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: newapi
+      POSTGRES_PASSWORD: ${NEWAPI_DB_PASSWORD:?Defina NEWAPI_DB_PASSWORD no .env}
+      POSTGRES_DB: newapi
+    volumes: [newapi-pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U newapi -d newapi"]
+      interval: 5s
+      retries: 20
+
+  new-api:
+    image: calciumion/new-api:latest      # em servidor, fixe uma versão
+    container_name: licit-new-api
+    restart: unless-stopped
+    environment:
+      - TZ=America/Sao_Paulo
+      - SQL_DSN=postgresql://newapi:${NEWAPI_DB_PASSWORD}@newapi-db:5432/newapi
+    ports: ["127.0.0.1:3000:3000"]
+    volumes: [newapi-data:/data]
+    depends_on:
+      newapi-db: { condition: service_healthy }
+
+  # ---------------------------------------------------------------- IA local (Qwen + bge-m3)
+  ollama:
+    image: ollama/ollama:latest
+    container_name: licit-ollama
+    restart: unless-stopped
+    environment:
+      - OLLAMA_CONTEXT_LENGTH=8192          # contexto suficiente para trechos de edital e proposta
+      - OLLAMA_KEEP_ALIVE=10m               # descarrega o modelo da memória após 10 min parado
+    volumes: [ollama-modelos:/root/.ollama]
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      retries: 30
+    # sem "ports": só o New API e a aplicação usam o Ollama, por dentro do Docker
+
+  # Baixa os modelos na primeira vez (depois só confere e termina).
+  ollama-modelos:
+    image: ollama/ollama:latest
+    container_name: licit-ollama-modelos
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    entrypoint: ["/bin/sh", "-c", "ollama pull ${OLLAMA_MODELO_LOCAL:-qwen3.5:4b} && ollama pull ${EMBEDDINGS_MODELO:-bge-m3} && echo 'Modelos prontos.'"]
+    restart: "no"
+    depends_on:
+      ollama: { condition: service_healthy }
+
+  # ---------------------------------------------------------------- leitura de PDF
+  pdf-worker:
+    build: ./pdf-worker
+    container_name: licit-pdf-worker
+    restart: unless-stopped
+    environment:
+      - MAX_PDF_MB=${MAX_PDF_MB:-25}
+      - OCR_ATIVO=${OCR_ATIVO:-true}
+      - OCR_IDIOMA=${OCR_IDIOMA:-por}
+
+  # ---------------------------------------------------------------- aplicação
+  api:
+    build: ./backend
+    container_name: licit-api
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-licitacoes}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-licitacoes}
+      - PDF_WORKER_URL=http://pdf-worker:8001
+      - NEWAPI_BASE_URL=http://new-api:3000/v1
+      - OLLAMA_URL=http://ollama:11434
+      - UPLOAD_DIR=/data/uploads
+    volumes: [uploads:/data/uploads]
+    ports: ["127.0.0.1:3001:3001"]
+    depends_on:
+      postgres: { condition: service_healthy }
+      pdf-worker: { condition: service_started }
+      new-api: { condition: service_started }
+      ollama: { condition: service_healthy }
+
+  frontend:
+    build: ./frontend
+    container_name: licit-frontend
+    restart: unless-stopped
+    ports: ["127.0.0.1:8080:80"]
+    depends_on: [api]
+
+volumes:
+  pgdata:
+  newapi-pgdata:
+  newapi-data:
+  ollama-modelos:
+  uploads:

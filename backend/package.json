@@ -1,0 +1,17 @@
+{
+  "name": "licitacoes-spaguas-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "API e processamento do sistema de comparação de propostas (SP Águas)",
+  "scripts": {
+    "dev": "node --watch-path=src src/servidor.js",
+    "start": "node src/servidor.js",
+    "migrar": "node src/db/migrar.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "pg": "^8.13.1"
+  }
+}

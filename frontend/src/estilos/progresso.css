@@ -1,0 +1,78 @@
+/* Pop-up de progresso: círculo enchendo de água (identidade SP Águas). */
+
+.progresso-fundo {
+  position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 20px;
+  background: rgb(10 34 56 / 55%); backdrop-filter: blur(3px);
+  animation: progresso-surgir .2s ease-out;
+}
+.progresso-caixa {
+  width: min(560px, 100%); max-height: calc(100vh - 40px); overflow: auto;
+  display: grid; justify-items: center; gap: 10px; padding: 30px 28px 24px;
+  background: #fff; border-radius: 14px; box-shadow: 0 24px 60px rgb(10 34 56 / 35%);
+  text-align: center; outline: none;
+  animation: progresso-entrar .25s ease-out;
+}
+.progresso-caixa h2 { font-size: 24px; margin-top: 6px; }
+.progresso-mensagem { color: var(--texto); font-size: 17px; min-height: 1.5em; }
+.progresso-contagem { color: var(--texto-suave); font-size: var(--t-rotulo); }
+
+/* ---------------- círculo de água ---------------- */
+.agua { position: relative; flex: none; }
+.agua svg { width: 100%; height: 100%; display: block; }
+.agua-borda { fill: none; stroke: var(--petroleo-suave); stroke-width: 6; }
+.agua-vazio { fill: #eef6f9; }
+.agua-nivel { transition: transform 1.2s cubic-bezier(.3, .7, .3, 1); }
+.agua-onda { animation: agua-ondular 3.2s linear infinite; }
+.agua-onda-tras { fill: #4cc3e6; opacity: .45; animation-duration: 5s; animation-direction: reverse; }
+.agua-onda-frente { opacity: .95; }
+@keyframes agua-ondular { from { transform: translateX(0); } to { transform: translateX(-100px); } }
+
+.agua-centro { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 2px; pointer-events: none; }
+.agua-logo { width: 72%; max-width: 140px; height: auto; background: none; } /* PNG transparente, sem fundo */
+.agua-logo-texto { font-family: var(--fonte-titulo); font-weight: 900; font-size: 18px; color: var(--marinho-900); }
+.agua-percentual {
+  font-family: var(--fonte-titulo); font-size: 26px; line-height: 1.1; color: var(--marinho-900);
+  padding: 2px 12px; border-radius: 999px; background: rgb(255 255 255 / 45%); backdrop-filter: blur(2px); /* mais transparente, ainda legível sobre a água */
+}
+
+/* ---------------- lista de etapas ---------------- */
+.progresso-lista { list-style: none; margin: 8px 0 0; padding: 0; width: 100%; display: grid; gap: 6px; text-align: left; max-height: 260px; overflow: auto; }
+.tarefa { display: grid; grid-template-columns: 24px 1fr auto; gap: 10px; align-items: start; padding: 9px 12px; border: 1px solid var(--linha); border-radius: 8px; }
+.tarefa-executando { border-color: #b8e2ef; background: #f4fbfd; }
+.tarefa-erro { border-color: #f1c7c2; background: var(--erro-fundo); }
+.tarefa-texto { display: grid; gap: 2px; min-width: 0; }
+.tarefa-titulo { font-weight: 700; font-size: 16px; color: var(--texto); overflow-wrap: anywhere; }
+.tarefa-detalhe { font-size: var(--t-rotulo); color: var(--texto-suave); overflow-wrap: anywhere; }
+.tarefa-erro .tarefa-detalhe { color: var(--erro); }
+.tarefa-pct { font-size: var(--t-rotulo); font-weight: 700; color: var(--texto-suave); }
+.tarefa-barra { display: block; height: 6px; margin-top: 4px; border-radius: 999px; background: var(--petroleo-suave); overflow: hidden; }
+.tarefa-barra i { display: block; height: 100%; background: linear-gradient(90deg, #4cc3e6, var(--petroleo)); transition: width .8s ease; }
+
+.tarefa-icone { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; margin-top: 1px; }
+.tarefa-icone.ok { background: var(--ok-fundo); color: var(--ok); }
+.tarefa-icone.erro { background: #fbd5d1; color: var(--erro); }
+.tarefa-icone.fila { border: 2px dashed var(--linha); }
+.tarefa-icone.rodando { border: 3px solid var(--petroleo-suave); border-top-color: var(--petroleo); animation: girar .9s linear infinite; }
+@keyframes girar { to { transform: rotate(360deg); } }
+
+.progresso-acoes { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
+
+/* ---------------- indicador minimizado ---------------- */
+.progresso-mini {
+  position: fixed; right: 22px; bottom: 22px; z-index: 40; display: flex; align-items: center; gap: 10px;
+  padding: 6px 16px 6px 6px; border: 1px solid var(--linha); border-radius: 999px; background: #fff;
+  box-shadow: 0 8px 24px rgb(10 34 56 / 20%); cursor: pointer; font: inherit; color: inherit; text-align: left;
+}
+.progresso-mini:hover { border-color: var(--petroleo); }
+.progresso-mini > span { display: grid; }
+.progresso-mini strong { font-size: 16px; color: var(--marinho-900); }
+.progresso-mini small { color: var(--texto-suave); }
+
+@keyframes progresso-surgir { from { opacity: 0; } }
+@keyframes progresso-entrar { from { opacity: 0; transform: translateY(12px) scale(.98); } }
+
+/* Quem prefere menos movimento (configuração do Windows) vê a água parada. */
+@media (prefers-reduced-motion: reduce) {
+  .agua-onda, .tarefa-icone.rodando, .progresso-fundo, .progresso-caixa { animation: none; }
+  .agua-nivel, .tarefa-barra i { transition: none; }
+}

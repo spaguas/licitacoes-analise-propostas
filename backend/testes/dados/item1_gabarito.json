@@ -1,0 +1,1778 @@
+{
+ "requisitos": [
+  {
+   "id": "I1-R001",
+   "secao": "Processador",
+   "atributo": "lancamento_processador",
+   "tipo": "verificacao_externa",
+   "operador": "<=",
+   "valor": 24,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "mes",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "lançado há no máximo 24 meses"
+   }
+  },
+  {
+   "id": "I1-R002",
+   "secao": "Processador",
+   "atributo": "passmark_cpu",
+   "tipo": "verificacao_externa",
+   "operador": ">=",
+   "valor": 11500,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "pontos",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Passmark (CPU Mark) mínima de 11.500"
+   }
+  },
+  {
+   "id": "I1-R003",
+   "secao": "Processador",
+   "atributo": "freq_nucleos_performance",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2.0,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "GHz",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Núcleos de Performance: 2.0 GHz"
+   }
+  },
+  {
+   "id": "I1-R004",
+   "secao": "Processador",
+   "atributo": "freq_nucleos_eficiencia",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1.3,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "GHz",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Núcleos de Eficiência: 1.3 GHz"
+   }
+  },
+  {
+   "id": "I1-R005",
+   "secao": "Processador",
+   "atributo": "nucleos",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 4,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "no mínimo 4 núcleos"
+   }
+  },
+  {
+   "id": "I1-R006",
+   "secao": "Processador",
+   "atributo": "threads",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 8,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "8 threads"
+   }
+  },
+  {
+   "id": "I1-R007",
+   "secao": "Processador",
+   "atributo": "cache",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 3,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "MB",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "cache mínimo de 3MB"
+   }
+  },
+  {
+   "id": "I1-R008",
+   "secao": "Processador",
+   "atributo": "gpu_integrada",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "GPU Integrada"
+   }
+  },
+  {
+   "id": "I1-R009",
+   "secao": "Memória",
+   "atributo": "memoria_tecnologia",
+   "tipo": "norma",
+   "operador": ">=",
+   "valor": "DDR5",
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Tecnologia mínima DDR5"
+   }
+  },
+  {
+   "id": "I1-R010",
+   "secao": "Memória",
+   "atributo": "memoria_frequencia",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 4800,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "MT/s",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Frequência mínima de 4.800 MT/s"
+   }
+  },
+  {
+   "id": "I1-R011",
+   "secao": "Memória",
+   "atributo": "memoria_capacidade_pente_unico",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 8,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "GB",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "8GB ou superior (pente único)"
+   }
+  },
+  {
+   "id": "I1-R012",
+   "secao": "Memória",
+   "atributo": "memoria_expansao",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 32,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "GB",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "expansão até 32GB"
+   }
+  },
+  {
+   "id": "I1-R013",
+   "secao": "Unidades de armazenamento",
+   "atributo": "armazenamento_tecnologia",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "NVMe"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Tecnologia NVMe"
+   }
+  },
+  {
+   "id": "I1-R014",
+   "secao": "Unidades de armazenamento",
+   "atributo": "armazenamento_capacidade",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 256,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "GB",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Capacidade mínima de 256GB"
+   }
+  },
+  {
+   "id": "I1-R015",
+   "secao": "Unidades de armazenamento",
+   "atributo": "armazenamento_expansao_nvme",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "expansão com tecnologia NVMe"
+   }
+  },
+  {
+   "id": "I1-R016",
+   "secao": "Unidades de armazenamento",
+   "atributo": "armazenamento_leitura",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 3200,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "MB/s",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "leitura de no mínimo 3200 MB/s"
+   }
+  },
+  {
+   "id": "I1-R017",
+   "secao": "Unidades de armazenamento",
+   "atributo": "armazenamento_escrita",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2100,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "MB/s",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "escrita de no mínimo 2100 MB/s"
+   }
+  },
+  {
+   "id": "I1-R018",
+   "secao": "Placa mãe",
+   "atributo": "placa_mae_fabricante",
+   "tipo": "texto_livre",
+   "operador": null,
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "mesmo fabricante do equipamento ou em regime de OEM"
+   }
+  },
+  {
+   "id": "I1-R019",
+   "secao": "Placa mãe",
+   "atributo": "chipset_integrado",
+   "tipo": "texto_livre",
+   "operador": null,
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "chipset deve ser integrado ao processador"
+   }
+  },
+  {
+   "id": "I1-R020",
+   "secao": "Placa mãe",
+   "atributo": "slots_memoria_ddr5",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Mínimo de 02 (dois) slots para memória do tipo DDR5"
+   }
+  },
+  {
+   "id": "I1-R021",
+   "secao": "Placa mãe",
+   "atributo": "tpm",
+   "tipo": "norma",
+   "operador": ">=",
+   "valor": "TPM 2.0",
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "TPM 2.0 ou superior"
+   }
+  },
+  {
+   "id": "I1-R022",
+   "secao": "Placa mãe",
+   "atributo": "slot_pcie_x16_g3",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "1 slot PCIe x16 de 3ª geração"
+   }
+  },
+  {
+   "id": "I1-R023",
+   "secao": "Placa mãe",
+   "atributo": "slot_pcie_x1_g3",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "1 slot PCIe x1 de 3ª geração"
+   }
+  },
+  {
+   "id": "I1-R024",
+   "secao": "Placa mãe",
+   "atributo": "slot_m2",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "1 slot M.2 2230/2280"
+   }
+  },
+  {
+   "id": "I1-R025",
+   "secao": "Placa mãe",
+   "atributo": "slot_sata3",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "1 slot SATA 3.0"
+   }
+  },
+  {
+   "id": "I1-R026",
+   "secao": "Fonte de Alimentação",
+   "atributo": "fonte_tensao_entrada",
+   "tipo": "faixa",
+   "operador": null,
+   "valor": null,
+   "valor_min": 100,
+   "valor_max": 240,
+   "unidade": "V",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "100 à 240 VAC"
+   }
+  },
+  {
+   "id": "I1-R027",
+   "secao": "Fonte de Alimentação",
+   "atributo": "fonte_frequencia",
+   "tipo": "faixa",
+   "operador": null,
+   "valor": null,
+   "valor_min": 50,
+   "valor_max": 60,
+   "unidade": "Hz",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "50hz - 60Hz"
+   }
+  },
+  {
+   "id": "I1-R028",
+   "secao": "Fonte de Alimentação",
+   "atributo": "fonte_selecao_automatica",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "seleção automática de tensão"
+   }
+  },
+  {
+   "id": "I1-R029",
+   "secao": "Fonte de Alimentação",
+   "atributo": "fonte_potencia",
+   "tipo": "faixa",
+   "operador": null,
+   "valor": null,
+   "valor_min": 150,
+   "valor_max": 500,
+   "unidade": "W",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Potência entre 150W e 500W"
+   }
+  },
+  {
+   "id": "I1-R030",
+   "secao": "Conectividade",
+   "atributo": "wifi",
+   "tipo": "norma",
+   "operador": ">=",
+   "valor": "Wi-Fi 6",
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Wi-Fi 6 (802.11ax) ou superior"
+   }
+  },
+  {
+   "id": "I1-R031",
+   "secao": "Conectividade",
+   "atributo": "ethernet",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "Gbps",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Ethernet RJ-45 Gigabit"
+   }
+  },
+  {
+   "id": "I1-R032",
+   "secao": "Conectividade",
+   "atributo": "bluetooth",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Bluetooth"
+   }
+  },
+  {
+   "id": "I1-R033",
+   "secao": "Gabinete",
+   "atributo": "gabinete_formato",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "compacto",
+    "mini desktop",
+    "slim desktop"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "“compacto”, “mini desktop” ou “slim desktop”"
+   }
+  },
+  {
+   "id": "I1-R034",
+   "secao": "Gabinete",
+   "atributo": "gabinete_construcao",
+   "tipo": "texto_livre",
+   "operador": null,
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "otimização do fluxo de ar interno"
+   }
+  },
+  {
+   "id": "I1-R035",
+   "secao": "Peso",
+   "atributo": "peso_gabinete",
+   "tipo": "numerico",
+   "operador": "<=",
+   "valor": 6,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "kg",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "No máximo - 6kg"
+   }
+  },
+  {
+   "id": "I1-R036",
+   "secao": "Interfaces frontais",
+   "atributo": "usb2_frontal",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "2 portas USB 2.0"
+   }
+  },
+  {
+   "id": "I1-R037",
+   "secao": "Interfaces frontais",
+   "atributo": "usb32g1_frontal",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "2 portas USB 3.2 de 1ª geração"
+   }
+  },
+  {
+   "id": "I1-R038",
+   "secao": "Interfaces traseiras",
+   "atributo": "usb2_traseira",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "2 portas USB 2.0"
+   }
+  },
+  {
+   "id": "I1-R039",
+   "secao": "Interfaces traseiras",
+   "atributo": "usb32g1_traseira",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "2 portas USB 3.2 de 1ª geração"
+   }
+  },
+  {
+   "id": "I1-R040",
+   "secao": "Interfaces traseiras",
+   "atributo": "video_dp_ou_dvi",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "1 porta display port 1.4 ou DVI"
+   }
+  },
+  {
+   "id": "I1-R041",
+   "secao": "Interfaces traseiras",
+   "atributo": "hdmi_21",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "1 porta HDMI 2.1"
+   }
+  },
+  {
+   "id": "I1-R042",
+   "secao": "Interfaces traseiras",
+   "atributo": "rj45_traseira",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "1 porta Ethernet RJ-45 (1 Gbps)"
+   }
+  },
+  {
+   "id": "I1-R043",
+   "secao": "Interfaces traseiras",
+   "atributo": "audio_microfone",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Conexões de áudio e microfone"
+   }
+  },
+  {
+   "id": "I1-R044",
+   "secao": "Interfaces traseiras",
+   "atributo": "conector_headset",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "1 conector de saída headset e microfone (3,5mm)"
+   }
+  },
+  {
+   "id": "I1-R045",
+   "secao": "Sistema Operacional",
+   "atributo": "sistema_operacional",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "Windows 11 Pro x64"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Microsoft Windows 11 Pro x64"
+   }
+  },
+  {
+   "id": "I1-R046",
+   "secao": "Sistema Operacional",
+   "atributo": "so_idioma",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "Português do Brasil"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Português do Brasil"
+   }
+  },
+  {
+   "id": "I1-R047",
+   "secao": "Sistema Operacional",
+   "atributo": "so_chave_bios",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "chave de ativação gravada na memória flash da BIOS"
+   }
+  },
+  {
+   "id": "I1-R048",
+   "secao": "Periféricos",
+   "atributo": "teclado_abnt2",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Teclado ABNT2"
+   }
+  },
+  {
+   "id": "I1-R049",
+   "secao": "Periféricos",
+   "atributo": "mouse_optico",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Mouse óptico"
+   }
+  },
+  {
+   "id": "I1-R050",
+   "secao": "Monitor",
+   "atributo": "monitor_tipo",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "LCD TFT LED"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Tipo LCD TFT LED"
+   }
+  },
+  {
+   "id": "I1-R051",
+   "secao": "Monitor",
+   "atributo": "monitor_tamanho",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 21,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "pol",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "No mínimo - 21\""
+   }
+  },
+  {
+   "id": "I1-R052",
+   "secao": "Monitor",
+   "atributo": "monitor_painel",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "IPS"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Tecnologia IPS"
+   }
+  },
+  {
+   "id": "I1-R053",
+   "secao": "Monitor",
+   "atributo": "monitor_resolucao",
+   "tipo": "norma",
+   "operador": ">=",
+   "valor": "Full HD",
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Full HD"
+   }
+  },
+  {
+   "id": "I1-R054",
+   "secao": "Monitor",
+   "atributo": "monitor_widescreen",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Widescreen"
+   }
+  },
+  {
+   "id": "I1-R055",
+   "secao": "Monitor",
+   "atributo": "monitor_taxa",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 60,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "Hz",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Taxa de atualização mínima de 60Hz"
+   }
+  },
+  {
+   "id": "G-R001",
+   "secao": "Geral",
+   "atributo": "linha_corporativa_serie",
+   "tipo": "texto_livre",
+   "operador": null,
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "trecho": "novos, de primeiro uso, de linha corporativa, produzidos em série",
+    "fonte": "Requisitos gerais do TR"
+   }
+  },
+  {
+   "id": "G-R002",
+   "secao": "Geral",
+   "atributo": "vedado_montagem_artesanal",
+   "tipo": "texto_livre",
+   "operador": null,
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "trecho": "vedada a entrega de equipamentos montados de forma artesanal",
+    "fonte": "Requisitos gerais do TR"
+   }
+  },
+  {
+   "id": "G-R003",
+   "secao": "Geral",
+   "atributo": "cabo_forca_nbr14136",
+   "tipo": "norma",
+   "operador": null,
+   "valor": "NBR 14136",
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "trecho": "ABNT NBR 14136",
+    "fonte": "Requisitos gerais do TR"
+   }
+  },
+  {
+   "id": "G-R004",
+   "secao": "Geral",
+   "atributo": "homogeneidade_modelo",
+   "tipo": "texto_livre",
+   "operador": null,
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "trecho": "homogeneidade de modelo, arquitetura e componentes principais",
+    "fonte": "Requisitos gerais do TR"
+   }
+  },
+  {
+   "id": "G-R005",
+   "secao": "Geral",
+   "atributo": "energy_star_epeat",
+   "tipo": "norma",
+   "operador": null,
+   "valor": "Energy Star",
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "trecho": "Energy Star e/ou EPEAT Silver ou superior",
+    "fonte": "TR, cap. 4 (prosa)"
+   }
+  },
+  {
+   "id": "G-R006",
+   "secao": "Geral",
+   "atributo": "prazo_entrega",
+   "tipo": "numerico",
+   "operador": "<=",
+   "valor": 60,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "dia",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "trecho": "até 60 (sessenta) dias corridos",
+    "fonte": "TR, cap. 5 (prosa)"
+   }
+  },
+  {
+   "id": "G-R007",
+   "secao": "Geral",
+   "atributo": "garantia",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 36,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "mes",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "trecho": "no mínimo, 36 (trinta e seis) meses",
+    "fonte": "TR, cap. 5 (prosa)"
+   }
+  },
+  {
+   "id": "G-R008",
+   "secao": "Geral",
+   "atributo": "campos_marca_fabricante",
+   "tipo": "campos_proposta",
+   "operador": null,
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "marca",
+    "fabricante"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "trecho": "Marca; Fabricante",
+    "fonte": "Edital, item 5.1 (prosa)"
+   }
+  },
+  {
+   "id": "G-R009",
+   "secao": "Geral",
+   "atributo": "validade_proposta",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 60,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "dia",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "trecho": "não será inferior a 60 (sessenta) dias",
+    "fonte": "Edital, item 5.8 (prosa)"
+   }
+  }
+ ],
+ "item_proposta": {
+  "item": "1",
+  "marca": "GRUPO GAMING INFO",
+  "fabricante": null,
+  "modelo": "PC GAMER RYZEN 7 5700G",
+  "quantidade": 36,
+  "valor_unitario": 5550.0
+ },
+ "especificacoes": [
+  {
+   "id": "E001",
+   "atributo_declarado": "marca",
+   "valor": "GRUPO GAMING INFO",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "GRUPO GAMING INFO",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E002",
+   "atributo_declarado": "modelo",
+   "valor": "PC GAMER RYZEN 7 5700G",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "PC GAMER RYZEN 7",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E003",
+   "atributo_declarado": "placa_mae_chipset",
+   "valor": "A520",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "-A520",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E004",
+   "atributo_declarado": "processador",
+   "valor": "Ryzen 7 5700G",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "-RYZEN 7 5700G",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": true,
+   "contradiz": null
+  },
+  {
+   "id": "E005",
+   "atributo_declarado": "memoria_tipo",
+   "valor": "DDR",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "MEMÓRIA RAM DDR",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E006",
+   "atributo_declarado": "memoria_capacidade",
+   "valor": 32,
+   "unidade": "GB",
+   "vago": false,
+   "alternativas": [
+    "32GB",
+    "2x16GB"
+   ],
+   "origem": {
+    "pagina": 1,
+    "trecho": "32GB OU 2X16GB",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E007",
+   "atributo_declarado": "memoria_modulos",
+   "valor": 1,
+   "unidade": "un",
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "MÓDULO DE MEMÓRIA RAM 1",
+    "fonte": "celula"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E008",
+   "atributo_declarado": "memoria_observacao",
+   "valor": "enviamos conforme estoque",
+   "unidade": null,
+   "vago": true,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "ENVIAMOS CONFORME ESTOQUE",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E009",
+   "atributo_declarado": "armazenamento_capacidade",
+   "valor": 1,
+   "unidade": "TB",
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "-SSD 1TB",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E010",
+   "atributo_declarado": "fonte_potencia",
+   "valor": 650,
+   "unidade": "W",
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "-650W",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E011",
+   "atributo_declarado": "fonte_selecao_tensao",
+   "valor": "bivolt automático ou manual",
+   "unidade": null,
+   "vago": true,
+   "alternativas": [
+    "automático",
+    "manual"
+   ],
+   "origem": {
+    "pagina": 1,
+    "trecho": "FONTE BIVOLT AUTOMÁTICO OU MANUAL",
+    "fonte": "celula"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E012",
+   "atributo_declarado": "cabo_forca",
+   "valor": "acompanha cabo de força",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 2,
+    "trecho": "ACOMPANHA CABO DE FORÇA",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E013",
+   "atributo_declarado": "sistema_operacional",
+   "valor": "Windows 10 Pro (Trial)",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 2,
+    "trecho": "-WINDOWS 10 TRIAL",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E014",
+   "atributo_declarado": "so_chave",
+   "valor": "não acompanha chave de ativação",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 2,
+    "trecho": "NÃO ACOMPANHA CHAVE DE ATIVAÇÃO",
+    "fonte": "pagina"
+   },
+   "negado": true,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E015",
+   "atributo_declarado": "gabinete_formato",
+   "valor": "ATX",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 2,
+    "trecho": "-ATX MODELO CONFORME ESTOQUE"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E016",
+   "atributo_declarado": "montagem",
+   "valor": "montado pelo fornecedor, com pasta térmica",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 2,
+    "trecho": "JÁ ENVIAMOS COM PASTA TÉRMICA E MONTADO",
+    "fonte": "celula"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E017",
+   "atributo_declarado": "placa_grafica",
+   "valor": "Vega 8",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "PLACA GRÁFICA VEGA 8",
+    "fonte": "celula"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E018",
+   "atributo_declarado": "placa_mae_marca",
+   "valor": "conforme estoque",
+   "unidade": null,
+   "vago": true,
+   "alternativas": null,
+   "origem": {
+    "pagina": 2,
+    "trecho": "MARCA DA PLACA-MÃE CONFORME ESTOQUE",
+    "fonte": "celula"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E019",
+   "atributo_declarado": "monitor_incluso",
+   "valor": false,
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 2,
+    "trecho": "COM MONITOR NÃO",
+    "fonte": "celula"
+   },
+   "negado": true,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E020",
+   "atributo_declarado": "prazo_entrega",
+   "valor": 30,
+   "unidade": "dia",
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 4,
+    "trecho": "PRAZO DE ENTREGA É DE 30 DIAS",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E021",
+   "atributo_declarado": "validade_proposta",
+   "valor": 90,
+   "unidade": "dia",
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 4,
+    "trecho": "VALIDADE DA PROPOSTA: 90",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E022",
+   "atributo_declarado": "garantia",
+   "valor": 24,
+   "unidade": "mes",
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 4,
+    "trecho": "GARANTIA DE 24 MESES",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E023",
+   "atributo_declarado": "valor_unitario",
+   "valor": 5550.0,
+   "unidade": "BRL",
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "R$ 5.550,00",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E024",
+   "atributo_declarado": "quantidade",
+   "valor": 36,
+   "unidade": "un",
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 1,
+    "trecho": "36 R$ 5.550,00",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E025",
+   "atributo_declarado": "referencia_externa",
+   "valor": "link de marketplace com preço R$ 4.093,60 (não é o preço ofertado)",
+   "unidade": null,
+   "vago": false,
+   "alternativas": null,
+   "origem": {
+    "pagina": 6,
+    "trecho": "R$4.093,60",
+    "fonte": "pagina"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  },
+  {
+   "id": "E026",
+   "atributo_declarado": "gabinete_modelo",
+   "valor": "conforme estoque",
+   "unidade": null,
+   "vago": true,
+   "alternativas": null,
+   "origem": {
+    "pagina": 2,
+    "trecho": "-ATX MODELO CONFORME ESTOQUE"
+   },
+   "negado": false,
+   "identificador_modelo": false,
+   "contradiz": null
+  }
+ ],
+ "depara": {
+  "I1-R001": "E004",
+  "I1-R002": "E004",
+  "I1-R003": "E004",
+  "I1-R004": "E004",
+  "I1-R005": "E004",
+  "I1-R006": "E004",
+  "I1-R007": "E004",
+  "I1-R008": "E017",
+  "I1-R009": "E005",
+  "I1-R010": null,
+  "I1-R011": "E006",
+  "I1-R012": null,
+  "I1-R013": null,
+  "I1-R014": "E009",
+  "I1-R015": null,
+  "I1-R016": null,
+  "I1-R017": null,
+  "I1-R018": "E018",
+  "I1-R019": "E003",
+  "I1-R020": null,
+  "I1-R021": null,
+  "I1-R022": null,
+  "I1-R023": null,
+  "I1-R024": null,
+  "I1-R025": null,
+  "I1-R026": "E011",
+  "I1-R027": null,
+  "I1-R028": "E011",
+  "I1-R029": "E010",
+  "I1-R030": null,
+  "I1-R031": null,
+  "I1-R032": null,
+  "I1-R033": "E015",
+  "I1-R034": "E015",
+  "I1-R035": null,
+  "I1-R036": null,
+  "I1-R037": null,
+  "I1-R038": null,
+  "I1-R039": null,
+  "I1-R040": null,
+  "I1-R041": null,
+  "I1-R042": null,
+  "I1-R043": null,
+  "I1-R044": null,
+  "I1-R045": "E013",
+  "I1-R046": null,
+  "I1-R047": "E014",
+  "I1-R048": null,
+  "I1-R049": null,
+  "I1-R050": "E019",
+  "I1-R051": "E019",
+  "I1-R052": "E019",
+  "I1-R053": "E019",
+  "I1-R054": "E019",
+  "I1-R055": "E019",
+  "G-R001": "E016",
+  "G-R002": "E016",
+  "G-R003": "E012",
+  "G-R004": "E008",
+  "G-R005": null,
+  "G-R006": "E020",
+  "G-R007": "E022",
+  "G-R008": "E001",
+  "G-R009": "E021"
+ },
+ "ia_texto_livre": {
+  "chipset_integrado": {
+   "forte": {
+    "status": "NÃO ATENDE",
+    "justificativa": "Chipset A520 é componente separado do processador na plataforma AM4."
+   },
+   "media": {
+    "status": "NÃO COMPROVADO",
+    "justificativa": "A proposta não declara se o chipset é integrado."
+   }
+  },
+  "gabinete_construcao": {
+   "forte": {
+    "status": "NÃO COMPROVADO",
+    "justificativa": "A proposta não descreve fluxo de ar, ruído ou acabamento."
+   },
+   "media": {
+    "status": "NÃO COMPROVADO",
+    "justificativa": "Sem descrição."
+   }
+  },
+  "linha_corporativa_serie": {
+   "forte": {
+    "status": "NÃO ATENDE",
+    "justificativa": "Produto ofertado é 'PC GAMER' montado pelo fornecedor."
+   },
+   "media": {
+    "status": "NÃO ATENDE",
+    "justificativa": "Equipamento gamer montado."
+   }
+  },
+  "vedado_montagem_artesanal": {
+   "forte": {
+    "status": "NÃO ATENDE",
+    "justificativa": "Proposta declara 'já enviamos com pasta térmica e montado'."
+   },
+   "media": {
+    "status": "NÃO ATENDE",
+    "justificativa": "Montagem própria."
+   }
+  },
+  "gpu_integrada": {
+   "forte": {
+    "status": "ATENDE",
+    "justificativa": "Radeon Vega 8 é a GPU integrada ao processador Ryzen 7 5700G."
+   },
+   "media": {
+    "status": "ATENDE",
+    "justificativa": "Placa gráfica Vega 8 integrada."
+   }
+  }
+ },
+ "esperado": {
+  "I1-R001": "VERIFICAR EXTERNAMENTE",
+  "I1-R002": "VERIFICAR EXTERNAMENTE",
+  "I1-R003": "VERIFICAR EXTERNAMENTE",
+  "I1-R004": "VERIFICAR EXTERNAMENTE",
+  "I1-R005": "VERIFICAR EXTERNAMENTE",
+  "I1-R006": "VERIFICAR EXTERNAMENTE",
+  "I1-R007": "VERIFICAR EXTERNAMENTE",
+  "I1-R008": "ATENDE",
+  "I1-R009": "NÃO COMPROVADO",
+  "I1-R010": "NÃO COMPROVADO",
+  "I1-R011": "REVISAR",
+  "I1-R012": "NÃO COMPROVADO",
+  "I1-R013": "NÃO COMPROVADO",
+  "I1-R014": "ATENDE",
+  "I1-R015": "NÃO COMPROVADO",
+  "I1-R016": "NÃO COMPROVADO",
+  "I1-R017": "NÃO COMPROVADO",
+  "I1-R018": "VAGO",
+  "I1-R019": "REVISAR",
+  "I1-R020": "NÃO COMPROVADO",
+  "I1-R021": "NÃO COMPROVADO",
+  "I1-R022": "NÃO COMPROVADO",
+  "I1-R023": "NÃO COMPROVADO",
+  "I1-R024": "NÃO COMPROVADO",
+  "I1-R025": "NÃO COMPROVADO",
+  "I1-R026": "NÃO COMPROVADO",
+  "I1-R027": "NÃO COMPROVADO",
+  "I1-R028": "VAGO",
+  "I1-R029": "NÃO ATENDE",
+  "I1-R030": "NÃO COMPROVADO",
+  "I1-R031": "NÃO COMPROVADO",
+  "I1-R032": "NÃO COMPROVADO",
+  "I1-R033": "NÃO ATENDE",
+  "I1-R034": "NÃO COMPROVADO",
+  "I1-R035": "NÃO COMPROVADO",
+  "I1-R036": "NÃO COMPROVADO",
+  "I1-R037": "NÃO COMPROVADO",
+  "I1-R038": "NÃO COMPROVADO",
+  "I1-R039": "NÃO COMPROVADO",
+  "I1-R040": "NÃO COMPROVADO",
+  "I1-R041": "NÃO COMPROVADO",
+  "I1-R042": "NÃO COMPROVADO",
+  "I1-R043": "NÃO COMPROVADO",
+  "I1-R044": "NÃO COMPROVADO",
+  "I1-R045": "NÃO ATENDE",
+  "I1-R046": "NÃO COMPROVADO",
+  "I1-R047": "NÃO ATENDE",
+  "I1-R048": "NÃO COMPROVADO",
+  "I1-R049": "NÃO COMPROVADO",
+  "I1-R050": "NÃO ATENDE",
+  "I1-R051": "NÃO ATENDE",
+  "I1-R052": "NÃO ATENDE",
+  "I1-R053": "NÃO ATENDE",
+  "I1-R054": "NÃO ATENDE",
+  "I1-R055": "NÃO ATENDE",
+  "G-R001": "NÃO ATENDE",
+  "G-R002": "NÃO ATENDE",
+  "G-R003": "NÃO COMPROVADO",
+  "G-R004": "VAGO",
+  "G-R005": "NÃO COMPROVADO",
+  "G-R006": "ATENDE",
+  "G-R007": "NÃO ATENDE",
+  "G-R008": "PARCIAL",
+  "G-R009": "ATENDE"
+ }
+}

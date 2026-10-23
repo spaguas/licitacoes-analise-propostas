@@ -1,0 +1,12 @@
+# configuração com senhas (nunca vai para o Git)
+.env
+.env.bak-*
+# dependências e builds
+node_modules/
+dist/
+__pycache__/
+# arquivos enviados pelo sistema (só na raiz e no backend; os dados de TESTE vão para o Git)
+/dados/
+/backend/dados/
+# PDFs reais de pregões (podem ter dados pessoais)
+docs/pdfs-de-teste/

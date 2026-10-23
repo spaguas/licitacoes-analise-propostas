@@ -1,0 +1,65 @@
+requisito;secao;atributo;exigido (trecho TR/edital);ofertado (trecho proposta);status;justificativa;metodo;pag_edital;pag_proposta
+I1-R001;Processador;lancamento_processador;lançado há no máximo 24 meses;-RYZEN 7 5700G;VERIFICAR EXTERNAMENTE;Conferir na ficha técnica oficial / Passmark do modelo declarado (Ryzen 7 5700G).;regra;3;1
+I1-R002;Processador;passmark_cpu;Passmark (CPU Mark) mínima de 11.500;-RYZEN 7 5700G;VERIFICAR EXTERNAMENTE;Conferir na ficha técnica oficial / Passmark do modelo declarado (Ryzen 7 5700G).;regra;3;1
+I1-R003;Processador;freq_nucleos_performance;Núcleos de Performance: 2.0 GHz;-RYZEN 7 5700G;VERIFICAR EXTERNAMENTE;Conferir na ficha técnica oficial / Passmark do modelo declarado (Ryzen 7 5700G).;regra;3;1
+I1-R004;Processador;freq_nucleos_eficiencia;Núcleos de Eficiência: 1.3 GHz;-RYZEN 7 5700G;VERIFICAR EXTERNAMENTE;Conferir na ficha técnica oficial / Passmark do modelo declarado (Ryzen 7 5700G).;regra;3;1
+I1-R005;Processador;nucleos;no mínimo 4 núcleos;-RYZEN 7 5700G;VERIFICAR EXTERNAMENTE;Conferir na ficha técnica oficial / Passmark do modelo declarado (Ryzen 7 5700G).;regra;3;1
+I1-R006;Processador;threads;8 threads;-RYZEN 7 5700G;VERIFICAR EXTERNAMENTE;Conferir na ficha técnica oficial / Passmark do modelo declarado (Ryzen 7 5700G).;regra;3;1
+I1-R007;Processador;cache;cache mínimo de 3MB;-RYZEN 7 5700G;VERIFICAR EXTERNAMENTE;Conferir na ficha técnica oficial / Passmark do modelo declarado (Ryzen 7 5700G).;regra;3;1
+I1-R008;Processador;gpu_integrada;GPU Integrada;PLACA GRÁFICA VEGA 8;ATENDE;GPU integrada declarada (Vega 8).;regra;3;1
+I1-R009;Memória;memoria_tecnologia;Tecnologia mínima DDR5;MEMÓRIA RAM DDR;NÃO COMPROVADO;Proposta diz só 'DDR', sem a geração (DDR4/DDR5).;regra;3;1
+I1-R010;Memória;memoria_frequencia;Frequência mínima de 4.800 MT/s;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R011;Memória;memoria_capacidade_pente_unico;8GB ou superior (pente único);32GB OU 2X16GB;REVISAR;"Proposta oferece alternativas ['32GB', '2x16GB']; confirmar qual será entregue.";regra;3;1
+I1-R012;Memória;memoria_expansao;expansão até 32GB;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R013;Unidades de armazenamento;armazenamento_tecnologia;Tecnologia NVMe;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R014;Unidades de armazenamento;armazenamento_capacidade;Capacidade mínima de 256GB;-SSD 1TB;ATENDE;1 TB >= 256 GB? sim.;regra;3;1
+I1-R015;Unidades de armazenamento;armazenamento_expansao_nvme;expansão com tecnologia NVMe;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R016;Unidades de armazenamento;armazenamento_leitura;leitura de no mínimo 3200 MB/s;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R017;Unidades de armazenamento;armazenamento_escrita;escrita de no mínimo 2100 MB/s;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R018;Placa mãe;placa_mae_fabricante;mesmo fabricante do equipamento ou em regime de OEM;MARCA DA PLACA-MÃE CONFORME ESTOQUE;VAGO;"ia-forte: Marca e modelo da placa-mãe 'conforme estoque'; não há como verificar fabricante/OEM. | ia-media: Placa-mãe indefinida.";ia (emulada);3;2
+I1-R019;Placa mãe;chipset_integrado;chipset deve ser integrado ao processador;-A520;REVISAR;ia-forte: Chipset A520 é componente separado do processador na plataforma AM4. | ia-media: Proposta não declara se o chipset é integrado.;ia (emulada);3;1
+I1-R020;Placa mãe;slots_memoria_ddr5;Mínimo de 02 (dois) slots para memória do tipo DDR5;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R021;Placa mãe;tpm;TPM 2.0 ou superior;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R022;Placa mãe;slot_pcie_x16_g3;1 slot PCIe x16 de 3ª geração;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R023;Placa mãe;slot_pcie_x1_g3;1 slot PCIe x1 de 3ª geração;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R024;Placa mãe;slot_m2;1 slot M.2 2230/2280;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R025;Placa mãe;slot_sata3;1 slot SATA 3.0;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R026;Fonte de Alimentação;fonte_tensao_entrada;100 à 240 VAC;FONTE BIVOLT AUTOMÁTICO OU MANUAL;NÃO COMPROVADO;A especificação ligada ('FONTE BIVOLT AUTOMÁTICO OU MANUAL') não traz valor em V.;regra;3;1
+I1-R027;Fonte de Alimentação;fonte_frequencia;50hz - 60Hz;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;3;
+I1-R028;Fonte de Alimentação;fonte_selecao_automatica;seleção automática de tensão;FONTE BIVOLT AUTOMÁTICO OU MANUAL;VAGO;Proposta usa termo sem compromisso verificável: 'FONTE BIVOLT AUTOMÁTICO OU MANUAL'.;regra;3;1
+I1-R029;Fonte de Alimentação;fonte_potencia;Potência entre 150W e 500W;-650W;NÃO ATENDE;650 W fora da faixa 150–500 W.;regra;3;1
+I1-R030;Conectividade;wifi;Wi-Fi 6 (802.11ax) ou superior;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R031;Conectividade;ethernet;Ethernet RJ-45 Gigabit;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R032;Conectividade;bluetooth;Bluetooth;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R033;Gabinete;gabinete_formato;“compacto”, “mini desktop” ou “slim desktop”;-ATX MODELO CONFORME ESTOQUE;NÃO ATENDE;Ofertado 'ATX' × permitido ['compacto', 'mini desktop', 'slim desktop'].;regra;4;2
+I1-R034;Gabinete;gabinete_construcao;otimização do fluxo de ar interno;-ATX MODELO CONFORME ESTOQUE;NÃO COMPROVADO;ia-forte: Proposta não descreve fluxo de ar, ruído ou acabamento. | ia-media: Sem descrição.;ia (emulada);4;2
+I1-R035;Peso;peso_gabinete;No máximo - 6kg;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R036;Interfaces frontais;usb2_frontal;2 portas USB 2.0;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R037;Interfaces frontais;usb32g1_frontal;2 portas USB 3.2 de 1ª geração;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R038;Interfaces traseiras;usb2_traseira;2 portas USB 2.0;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R039;Interfaces traseiras;usb32g1_traseira;2 portas USB 3.2 de 1ª geração;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R040;Interfaces traseiras;video_dp_ou_dvi;1 porta display port 1.4 ou DVI;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R041;Interfaces traseiras;hdmi_21;1 porta HDMI 2.1;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R042;Interfaces traseiras;rj45_traseira;1 porta Ethernet RJ-45 (1 Gbps);;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R043;Interfaces traseiras;audio_microfone;Conexões de áudio e microfone;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R044;Interfaces traseiras;conector_headset;1 conector de saída headset e microfone (3,5mm);;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R045;Sistema Operacional;sistema_operacional;Microsoft Windows 11 Pro x64;-WINDOWS 10 TRIAL;NÃO ATENDE;Ofertado 'Windows 10 Pro (Trial)' × permitido ['Windows 11 Pro x64'].;regra;4;2
+I1-R046;Sistema Operacional;so_idioma;Português do Brasil;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R047;Sistema Operacional;so_chave_bios;chave de ativação gravada na memória flash da BIOS;NÃO ACOMPANHA CHAVE DE ATIVAÇÃO;NÃO ATENDE;Proposta declara 'NÃO ACOMPANHA CHAVE DE ATIVAÇÃO'.;regra;4;2
+I1-R048;Periféricos;teclado_abnt2;Teclado ABNT2;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R049;Periféricos;mouse_optico;Mouse óptico;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;4;
+I1-R050;Monitor;monitor_tipo;Tipo LCD TFT LED;COM MONITOR NÃO;NÃO ATENDE;"Proposta declara 'Com monitor: Não'; monitor é exigido.";regra;4;2
+I1-R051;Monitor;monitor_tamanho;"No mínimo - 21""";COM MONITOR NÃO;NÃO ATENDE;"Proposta declara 'Com monitor: Não'; monitor é exigido.";regra;4;2
+I1-R052;Monitor;monitor_painel;Tecnologia IPS;COM MONITOR NÃO;NÃO ATENDE;"Proposta declara 'Com monitor: Não'; monitor é exigido.";regra;4;2
+I1-R053;Monitor;monitor_resolucao;Full HD;COM MONITOR NÃO;NÃO ATENDE;"Proposta declara 'Com monitor: Não'; monitor é exigido.";regra;4;2
+I1-R054;Monitor;monitor_widescreen;Widescreen;COM MONITOR NÃO;NÃO ATENDE;"Proposta declara 'Com monitor: Não'; monitor é exigido.";regra;4;2
+I1-R055;Monitor;monitor_taxa;Taxa de atualização mínima de 60Hz;COM MONITOR NÃO;NÃO ATENDE;"Proposta declara 'Com monitor: Não'; monitor é exigido.";regra;4;2
+G-R001;Geral;linha_corporativa_serie;novos, de primeiro uso, de linha corporativa, produzidos em série;JÁ ENVIAMOS COM PASTA TÉRMICA E MONTADO;NÃO ATENDE;ia-forte: Produto ofertado é 'PC GAMER' montado pelo fornecedor, não equipamento de linha corporativa produzido em série. | ia-media: Equipamento gamer montado.;ia (emulada);Requisitos gerais do TR;2
+G-R002;Geral;vedado_montagem_artesanal;vedada a entrega de equipamentos montados de forma artesanal;JÁ ENVIAMOS COM PASTA TÉRMICA E MONTADO;NÃO ATENDE;ia-forte: Proposta declara 'já enviamos com pasta térmica e montado', com componentes conforme estoque. | ia-media: Montagem própria.;ia (emulada);Requisitos gerais do TR;2
+G-R003;Geral;cabo_forca_nbr14136;ABNT NBR 14136;ACOMPANHA CABO DE FORÇA;NÃO COMPROVADO;Norma exigida não citada.;regra;Requisitos gerais do TR;2
+G-R004;Geral;homogeneidade_modelo;homogeneidade de modelo, arquitetura e componentes principais;ENVIAMOS CONFORME ESTOQUE;REVISAR;ia-forte: Memória e gabinete 'conforme estoque' impedem garantir o mesmo modelo nas 36 unidades. | ia-media: Componentes variam conforme estoque.;ia (emulada);Requisitos gerais do TR;1
+G-R005;Geral;energy_star_epeat;Energy Star e/ou EPEAT Silver ou superior;;NÃO COMPROVADO;A proposta não traz essa informação.;regra;TR, cap. 4 (prosa);
+G-R006;Geral;prazo_entrega;até 60 (sessenta) dias corridos;PRAZO DE ENTREGA É DE 30 DIAS;ATENDE;30 dia <= 60 dia? sim.;regra;TR, cap. 5 (prosa);4
+G-R007;Geral;garantia;no mínimo, 36 (trinta e seis) meses;GARANTIA DE 24 MESES;NÃO ATENDE;24 mes >= 36 mes? não.;regra;TR, cap. 5 (prosa);4
+G-R008;Geral;campos_marca_fabricante;"Marca; Fabricante";GRUPO GAMING INFO;PARCIAL;"Marca informada; fabricante não informado (edital 5.1 exige os dois).";regra;Edital, item 5.1 (prosa);1
+G-R009;Geral;validade_proposta;não será inferior a 60 (sessenta) dias;VALIDADE DA PROPOSTA: 90;ATENDE;90 dia >= 60 dia? sim.;regra;Edital, item 5.8 (prosa);4

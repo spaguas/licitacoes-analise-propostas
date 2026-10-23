@@ -1,0 +1,450 @@
+[
+ {
+  "requisito_id": "I1-R001",
+  "atributo": "lancamento_processador",
+  "sugerido": null,
+  "confianca": 0.23,
+  "esperado": "E004"
+ },
+ {
+  "requisito_id": "I1-R002",
+  "atributo": "passmark_cpu",
+  "sugerido": null,
+  "confianca": 0.1,
+  "esperado": "E004"
+ },
+ {
+  "requisito_id": "I1-R003",
+  "atributo": "freq_nucleos_performance",
+  "sugerido": null,
+  "confianca": 0.1,
+  "esperado": "E004"
+ },
+ {
+  "requisito_id": "I1-R004",
+  "atributo": "freq_nucleos_eficiencia",
+  "sugerido": null,
+  "confianca": 0.1,
+  "esperado": "E004"
+ },
+ {
+  "requisito_id": "I1-R005",
+  "atributo": "nucleos",
+  "sugerido": null,
+  "confianca": 0.16,
+  "esperado": "E004"
+ },
+ {
+  "requisito_id": "I1-R006",
+  "atributo": "threads",
+  "sugerido": null,
+  "confianca": 0.13,
+  "esperado": "E004"
+ },
+ {
+  "requisito_id": "I1-R007",
+  "atributo": "cache",
+  "sugerido": null,
+  "confianca": 0.15,
+  "esperado": "E004"
+ },
+ {
+  "requisito_id": "I1-R008",
+  "atributo": "gpu_integrada",
+  "sugerido": null,
+  "confianca": 0.12,
+  "esperado": "E017"
+ },
+ {
+  "requisito_id": "I1-R009",
+  "atributo": "memoria_tecnologia",
+  "sugerido": "E005",
+  "confianca": 0.34,
+  "esperado": "E005"
+ },
+ {
+  "requisito_id": "I1-R010",
+  "atributo": "memoria_frequencia",
+  "sugerido": null,
+  "confianca": 0.28,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R011",
+  "atributo": "memoria_capacidade_pente_unico",
+  "sugerido": "E006",
+  "confianca": 0.36,
+  "esperado": "E006"
+ },
+ {
+  "requisito_id": "I1-R012",
+  "atributo": "memoria_expansao",
+  "sugerido": "E005",
+  "confianca": 0.3,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R013",
+  "atributo": "armazenamento_tecnologia",
+  "sugerido": "E009",
+  "confianca": 0.36,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R014",
+  "atributo": "armazenamento_capacidade",
+  "sugerido": "E006",
+  "confianca": 0.39,
+  "esperado": "E009"
+ },
+ {
+  "requisito_id": "I1-R015",
+  "atributo": "armazenamento_expansao_nvme",
+  "sugerido": "E009",
+  "confianca": 0.33,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R016",
+  "atributo": "armazenamento_leitura",
+  "sugerido": "E009",
+  "confianca": 0.34,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R017",
+  "atributo": "armazenamento_escrita",
+  "sugerido": "E009",
+  "confianca": 0.34,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R018",
+  "atributo": "placa_mae_fabricante",
+  "sugerido": null,
+  "confianca": 0.17,
+  "esperado": "E018"
+ },
+ {
+  "requisito_id": "I1-R019",
+  "atributo": "chipset_integrado",
+  "sugerido": "E003",
+  "confianca": 0.35,
+  "esperado": "E003"
+ },
+ {
+  "requisito_id": "I1-R020",
+  "atributo": "slots_memoria_ddr5",
+  "sugerido": "E005",
+  "confianca": 0.42,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R021",
+  "atributo": "tpm",
+  "sugerido": null,
+  "confianca": 0.14,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R022",
+  "atributo": "slot_pcie_x16_g3",
+  "sugerido": null,
+  "confianca": 0.1,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R023",
+  "atributo": "slot_pcie_x1_g3",
+  "sugerido": null,
+  "confianca": 0.11,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R024",
+  "atributo": "slot_m2",
+  "sugerido": null,
+  "confianca": 0.12,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R025",
+  "atributo": "slot_sata3",
+  "sugerido": null,
+  "confianca": 0.12,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R026",
+  "atributo": "fonte_tensao_entrada",
+  "sugerido": null,
+  "confianca": 0.23,
+  "esperado": "E011"
+ },
+ {
+  "requisito_id": "I1-R027",
+  "atributo": "fonte_frequencia",
+  "sugerido": null,
+  "confianca": 0.29,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R028",
+  "atributo": "fonte_selecao_automatica",
+  "sugerido": "E011",
+  "confianca": 0.48,
+  "esperado": "E011"
+ },
+ {
+  "requisito_id": "I1-R029",
+  "atributo": "fonte_potencia",
+  "sugerido": "E010",
+  "confianca": 0.52,
+  "esperado": "E010"
+ },
+ {
+  "requisito_id": "I1-R030",
+  "atributo": "wifi",
+  "sugerido": null,
+  "confianca": 0.06,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R031",
+  "atributo": "ethernet",
+  "sugerido": null,
+  "confianca": 0.05,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R032",
+  "atributo": "bluetooth",
+  "sugerido": null,
+  "confianca": 0.05,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R033",
+  "atributo": "gabinete_formato",
+  "sugerido": null,
+  "confianca": 0.15,
+  "esperado": "E015"
+ },
+ {
+  "requisito_id": "I1-R034",
+  "atributo": "gabinete_construcao",
+  "sugerido": null,
+  "confianca": 0.19,
+  "esperado": "E015"
+ },
+ {
+  "requisito_id": "I1-R035",
+  "atributo": "peso_gabinete",
+  "sugerido": null,
+  "confianca": 0.12,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R036",
+  "atributo": "usb2_frontal",
+  "sugerido": null,
+  "confianca": 0.06,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R037",
+  "atributo": "usb32g1_frontal",
+  "sugerido": null,
+  "confianca": 0.05,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R038",
+  "atributo": "usb2_traseira",
+  "sugerido": null,
+  "confianca": 0.01,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R039",
+  "atributo": "usb32g1_traseira",
+  "sugerido": null,
+  "confianca": 0.04,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R040",
+  "atributo": "video_dp_ou_dvi",
+  "sugerido": null,
+  "confianca": 0.04,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R041",
+  "atributo": "hdmi_21",
+  "sugerido": null,
+  "confianca": 0.01,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R042",
+  "atributo": "rj45_traseira",
+  "sugerido": null,
+  "confianca": 0.01,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R043",
+  "atributo": "audio_microfone",
+  "sugerido": null,
+  "confianca": 0.02,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R044",
+  "atributo": "conector_headset",
+  "sugerido": null,
+  "confianca": 0.05,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R045",
+  "atributo": "sistema_operacional",
+  "sugerido": "E013",
+  "confianca": 0.6,
+  "esperado": "E013"
+ },
+ {
+  "requisito_id": "I1-R046",
+  "atributo": "so_idioma",
+  "sugerido": null,
+  "confianca": 0.29,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R047",
+  "atributo": "so_chave_bios",
+  "sugerido": "E014",
+  "confianca": 0.46,
+  "esperado": "E014"
+ },
+ {
+  "requisito_id": "I1-R048",
+  "atributo": "teclado_abnt2",
+  "sugerido": null,
+  "confianca": 0.04,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R049",
+  "atributo": "mouse_optico",
+  "sugerido": null,
+  "confianca": 0.12,
+  "esperado": null
+ },
+ {
+  "requisito_id": "I1-R050",
+  "atributo": "monitor_tipo",
+  "sugerido": "E019",
+  "confianca": 0.46,
+  "esperado": "E019"
+ },
+ {
+  "requisito_id": "I1-R051",
+  "atributo": "monitor_tamanho",
+  "sugerido": "E019",
+  "confianca": 0.5,
+  "esperado": "E019"
+ },
+ {
+  "requisito_id": "I1-R052",
+  "atributo": "monitor_painel",
+  "sugerido": "E019",
+  "confianca": 0.48,
+  "esperado": "E019"
+ },
+ {
+  "requisito_id": "I1-R053",
+  "atributo": "monitor_resolucao",
+  "sugerido": "E019",
+  "confianca": 0.49,
+  "esperado": "E019"
+ },
+ {
+  "requisito_id": "I1-R054",
+  "atributo": "monitor_widescreen",
+  "sugerido": "E019",
+  "confianca": 0.35,
+  "esperado": "E019"
+ },
+ {
+  "requisito_id": "I1-R055",
+  "atributo": "monitor_taxa",
+  "sugerido": "E019",
+  "confianca": 0.39,
+  "esperado": "E019"
+ },
+ {
+  "requisito_id": "G-R001",
+  "atributo": "linha_corporativa_serie",
+  "sugerido": null,
+  "confianca": 0.11,
+  "esperado": "E016"
+ },
+ {
+  "requisito_id": "G-R002",
+  "atributo": "vedado_montagem_artesanal",
+  "sugerido": null,
+  "confianca": 0.23,
+  "esperado": "E016"
+ },
+ {
+  "requisito_id": "G-R003",
+  "atributo": "cabo_forca_nbr14136",
+  "sugerido": null,
+  "confianca": 0.25,
+  "esperado": "E012"
+ },
+ {
+  "requisito_id": "G-R004",
+  "atributo": "homogeneidade_modelo",
+  "sugerido": null,
+  "confianca": 0.18,
+  "esperado": "E008"
+ },
+ {
+  "requisito_id": "G-R005",
+  "atributo": "energy_star_epeat",
+  "sugerido": null,
+  "confianca": 0.02,
+  "esperado": null
+ },
+ {
+  "requisito_id": "G-R006",
+  "atributo": "prazo_entrega",
+  "sugerido": "E020",
+  "confianca": 0.55,
+  "esperado": "E020"
+ },
+ {
+  "requisito_id": "G-R007",
+  "atributo": "garantia",
+  "sugerido": "E022",
+  "confianca": 0.55,
+  "esperado": "E022"
+ },
+ {
+  "requisito_id": "G-R008",
+  "atributo": "campos_marca_fabricante",
+  "sugerido": null,
+  "confianca": 0.19,
+  "esperado": "E001"
+ },
+ {
+  "requisito_id": "G-R009",
+  "atributo": "validade_proposta",
+  "sugerido": "E021",
+  "confianca": 0.52,
+  "esperado": "E021"
+ }
+]

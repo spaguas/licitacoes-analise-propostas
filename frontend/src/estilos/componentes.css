@@ -1,0 +1,155 @@
+/* Componentes: cartões, botões, selos de status, avisos, área de envio, abas e tabelas. */
+.cartao { background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); padding: 22px 24px; box-shadow: var(--sombra); display: grid; gap: 12px; }
+
+.botao { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 42px; padding: 0 16px; border-radius: 6px; border: 1px solid transparent; font-weight: 700; font-size: 16px; cursor: pointer; white-space: nowrap; }
+.botao-principal { background: var(--petroleo); color: #fff; }
+.botao-principal:hover { background: var(--petroleo-escuro); }
+.botao-secundario { background: #fff; color: var(--marinho-800); border-color: var(--linha); }
+.botao-secundario:hover { border-color: var(--petroleo); color: var(--petroleo); }
+.botao-perigo { background: #fff; color: var(--erro); border-color: #f1c7c2; }
+.botao-perigo:hover { background: var(--erro-fundo); }
+.botao:disabled { opacity: .5; cursor: not-allowed; }
+.icone-botao { border: 1px solid var(--linha); background: #fff; border-radius: 6px; padding: 5px; cursor: pointer; color: var(--texto-suave); }
+.icone-botao:hover { color: var(--petroleo); border-color: var(--petroleo); }
+
+.selo { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; font-size: var(--t-rotulo); font-weight: 700; white-space: nowrap; }
+.selo-ok { color: var(--ok); background: var(--ok-fundo); }
+.selo-erro { color: var(--erro); background: var(--erro-fundo); }
+.selo-atencao { color: var(--atencao); background: var(--atencao-fundo); }
+.selo-neutro { color: var(--neutro); background: var(--neutro-fundo); }
+.selo-externo { color: var(--externo); background: var(--externo-fundo); }
+.selo-revisar { color: var(--revisar); background: var(--revisar-fundo); }
+
+.aviso { display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; border-radius: var(--raio); border: 1px solid; font-size: var(--t-texto); }
+.aviso > div { flex: 1; }
+.aviso-sucesso { color: var(--ok); background: var(--ok-fundo); border-color: #b9e0c7; }
+.aviso-erro { color: var(--erro); background: var(--erro-fundo); border-color: #f1c7c2; }
+.aviso-info { color: var(--externo); background: var(--externo-fundo); border-color: #c4dbf3; }
+.aviso-atencao { color: var(--atencao); background: var(--atencao-fundo); border-color: #f0d9a8; }
+.aviso-fechar { border: 0; background: none; color: inherit; cursor: pointer; }
+
+.area-envio { display: flex; align-items: center; gap: 16px; padding: 18px; border: 2px dashed var(--linha); border-radius: var(--raio); background: #f8fafb; color: var(--texto-suave); }
+.area-envio.arrastando { border-color: var(--petroleo); background: var(--petroleo-suave); }
+.area-envio.desabilitada { opacity: .6; }
+.area-envio-texto { display: grid; flex: 1; }
+.area-envio-texto strong { color: var(--texto); }
+.area-envio-texto span { font-size: var(--t-rotulo); }
+
+.etapa { display: grid; gap: 14px; margin-top: 10px; }
+.etapa-cabecalho { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; border-top: 1px solid var(--linha); padding-top: 24px; }
+.etapa-acoes { display: flex; gap: 10px; flex-wrap: wrap; }
+.dica { display: inline-flex; align-items: center; gap: 6px; color: var(--texto-suave); font-size: var(--t-rotulo); }
+
+.abas { display: flex; flex-wrap: wrap; gap: 8px; }
+.abas button { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid var(--linha); border-radius: 999px; background: #fff; cursor: pointer; font-size: 16px; color: var(--texto); }
+.abas button em { font-style: normal; font-size: var(--t-rotulo); background: var(--neutro-fundo); border-radius: 999px; padding: 0 8px; }
+.abas button.ativa { border-color: var(--petroleo); background: var(--petroleo-suave); color: var(--petroleo-escuro); font-weight: 700; }
+
+.tabela-rolagem { overflow-x: auto; }
+.tabela { width: 100%; border-collapse: collapse; font-size: var(--t-texto); }
+.tabela th { text-align: left; font-size: var(--t-rotulo); letter-spacing: .06em; text-transform: uppercase; color: var(--texto-suave); padding: 10px 12px; border-bottom: 2px solid var(--linha); white-space: nowrap; }
+.tabela td { padding: 12px; border-bottom: 1px solid var(--linha); vertical-align: top; }
+.tabela tbody tr:hover td { background: #f8fbfc; }
+.tabela .linha-secao th { background: #f3f7f9; color: var(--marinho-800); text-transform: none; letter-spacing: 0; font-size: 16px; }
+.tabela tr.rejeitado td { opacity: .5; text-decoration: line-through; }
+.codigo { font-size: var(--t-rotulo); color: var(--texto-suave); white-space: nowrap; }
+.trecho { font-style: italic; }
+.vazio-tabela { color: var(--texto-suave); padding: 12px 0; }
+
+.situacao { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: var(--t-rotulo); font-weight: 700; background: var(--neutro-fundo); color: var(--neutro); }
+.situacao-validado, .situacao-analisado, .situacao-extraida, .situacao-ok, .situacao-confirmado { background: var(--ok-fundo); color: var(--ok); }
+.situacao-rejeitado, .situacao-erro { background: var(--erro-fundo); color: var(--erro); }
+.situacao-conflito, .situacao-corrigido, .situacao-invalido { background: var(--atencao-fundo); color: var(--atencao); }
+.etiqueta { font-size: var(--t-rotulo); font-weight: 700; color: var(--petroleo-escuro); background: var(--petroleo-suave); padding: 2px 8px; border-radius: 4px; }
+
+/* Janela modal genérica (edição de requisito) */
+.modal-fundo { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 20px; background: rgb(10 34 56 / 55%); backdrop-filter: blur(3px); }
+.modal-caixa { width: min(640px, 100%); max-height: calc(100vh - 40px); overflow: auto; display: grid; gap: 14px; padding: 26px 28px 22px; background: #fff; border-radius: 14px; box-shadow: 0 24px 60px rgb(10 34 56 / 35%); }
+.modal-acoes { display: flex; justify-content: flex-end; gap: 10px; flex-wrap: wrap; }
+.trecho-original { display: grid; gap: 6px; padding: 12px 14px; border-left: 4px solid var(--ciano); background: #f3f9fb; border-radius: 6px; }
+.trecho-original span { font-size: var(--t-rotulo); font-weight: 700; color: var(--texto-suave); }
+.trecho-original blockquote { margin: 0; font-style: italic; color: var(--texto); }
+.grade-form { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.grade-form .largura-total { grid-column: 1 / -1; }
+.caixa-marcar { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--texto); font-size: 16px; }
+.caixa-marcar input { width: 20px; height: 20px; }
+@media (max-width: 640px) { .grade-form { grid-template-columns: 1fr; } }
+
+/* Origem do requisito (TR / Edital) */
+.origem { display: inline-block; padding: 1px 8px; border-radius: 4px; font-size: var(--t-rotulo); font-weight: 700; white-space: nowrap; }
+.origem-tr { background: var(--petroleo-suave); color: var(--petroleo-escuro); }
+.origem-edital { background: #ece8f7; color: #4b3a8a; }
+.origem-anexo, .origem-doc { background: var(--neutro-fundo); color: var(--neutro); }
+/* De-para do item no cartão do fornecedor */
+.depara-item { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center; padding: 8px 10px; border-radius: 6px; background: #f6f9fb; font-size: 15px; }
+.depara-item > span { display: grid; gap: 2px; }
+.depara-item small { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--texto-suave); }
+.depara-item > span[aria-hidden] { color: var(--petroleo); font-size: 20px; }
+.aviso-qtd { display: inline-flex; align-items: center; gap: 6px; color: var(--atencao); font-size: var(--t-rotulo); font-weight: 700; }
+
+/* Critério para informação ausente (chave liga/desliga) */
+.criterio-ausencia { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; padding: 14px 16px; border: 1px solid var(--linha); border-radius: var(--raio); background: #fff; }
+.chave { display: flex; align-items: center; gap: 12px; cursor: pointer; font-weight: 400; color: var(--texto); font-size: 16px; }
+.chave > span:last-child { display: grid; }
+.chave small { color: var(--texto-suave); }
+.chave input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.chave-trilho { position: relative; flex: none; width: 46px; height: 26px; border-radius: 999px; background: #c9d4db; transition: background .2s; }
+.chave-trilho i { position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgb(0 0 0 / 25%); transition: transform .2s; }
+.chave input:checked + .chave-trilho { background: var(--erro); }
+.chave input:checked + .chave-trilho i { transform: translateX(20px); }
+.chave input:focus-visible + .chave-trilho { outline: 3px solid var(--ciano); outline-offset: 2px; }
+.aplicaveis { font-size: var(--t-rotulo); color: var(--texto-suave); }
+.etiqueta-faltante { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 4px; font-size: 13px; font-weight: 700; background: #fff1e6; color: #a04a00; }
+
+/* Visão completa do fornecedor */
+.alternar-visao { display: inline-flex; padding: 4px; gap: 4px; border: 1px solid var(--linha); border-radius: 10px; background: #fff; width: fit-content; flex-wrap: wrap; }
+.alternar-visao button { border: 0; background: none; padding: 8px 14px; border-radius: 7px; cursor: pointer; font-size: 16px; color: var(--texto-suave); font-weight: 600; }
+.alternar-visao button.ativa { background: var(--petroleo); color: #fff; }
+.resumo-completo-topo { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+.resumo-completo-topo h3 { font-size: 22px; }
+.total-requisitos { display: grid; justify-items: end; }
+.total-requisitos strong { font-family: var(--fonte-titulo); font-size: 40px; line-height: 1; color: var(--marinho-900); }
+.total-requisitos span { color: var(--texto-suave); font-size: var(--t-rotulo); }
+.tabela-grupos td:first-child { font-weight: 700; white-space: nowrap; }
+.tabela-grupos .linha-total td { font-weight: 700; background: #f3f7f9; }
+.filtros { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.linha-sem-avaliacao td { color: var(--texto-suave); background: #fafbfc; }
+.selo-nao-ofertado { color: #5d6b78; background: #e9edf1; }
+
+/* Texto de recusa / diligência */
+.texto-recusa { width: min(900px, 100%); }
+.texto-opcoes { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.texto-editor { width: 100%; min-height: 380px; resize: vertical; font-family: var(--fonte-texto); font-size: 16px; line-height: 1.5; white-space: pre-wrap; }
+.resumo-e-acao { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+.julgamento { display: grid; gap: 4px; min-width: 260px; max-width: 420px; }
+.julgamento select { font-size: 15px; }
+
+.prova-julgamento { color: var(--texto-suave); font-weight: 400; font-size: 14px; }
+.aviso-julgamento { color: var(--atencao); font-weight: 700; }
+
+/* Estrutura da licitação (Etapa 01) */
+.estrutura-topo { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+.estrutura-titulo { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 6px 0 2px; font-size: 18px; }
+.pilula-julgamento { display: inline-block; padding: 4px 12px; border-radius: 999px; font-weight: 700; font-size: 15px; }
+.pilula-julgamento.item { background: var(--petroleo-suave); color: var(--petroleo-escuro); }
+.pilula-julgamento.lote { background: #ece8f7; color: #4b3a8a; }
+.estrutura-regra { display: flex; gap: 8px; align-items: flex-start; padding: 10px 12px; border-radius: 6px; background: #f3f9fb; color: var(--texto); }
+.estrutura-lote .estrutura-regra { background: #f4f1fb; }
+.estrutura-alerta { display: flex; gap: 8px; align-items: flex-start; padding: 10px 12px; border-radius: 6px; background: var(--atencao-fundo); color: var(--atencao); font-weight: 600; }
+
+/* Conferência do lote logo após ler a proposta */
+.lote-proposta { display: flex; align-items: center; gap: 6px; margin-top: 4px; font-size: var(--t-rotulo); font-weight: 700; }
+.lote-proposta.incompleto { color: var(--erro); }
+.lote-proposta.completo { color: var(--ok); }
+
+.botao-pequeno { min-height: 34px; padding: 0 10px; font-size: 14px; gap: 6px; }
+
+/* Campo de senha com botão de olho */
+.campo-senha { position: relative; display: block; }
+.campo-senha input { width: 100%; padding-right: 46px; }
+.botao-olho { position: absolute; top: 50%; right: 6px; transform: translateY(-50%); display: grid; place-items: center;
+  width: 36px; height: 36px; border: 0; border-radius: 6px; background: transparent; color: var(--texto-suave); cursor: pointer; }
+.botao-olho:hover { background: var(--petroleo-suave); color: var(--petroleo); }
+.botao-olho:focus-visible { outline: 3px solid var(--ciano); outline-offset: 1px; }
+.botao-olho[aria-pressed="true"] { color: var(--petroleo); }

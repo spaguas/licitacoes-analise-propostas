@@ -1,0 +1,1137 @@
+{
+ "item_1": [
+  {
+   "id": "I1-R001",
+   "linha": "L001",
+   "secao": "Processador",
+   "atributo": "lancamento_processador",
+   "tipo": "verificacao_externa",
+   "operador": "<=",
+   "valor": 24,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "mes",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "lançado há no máximo 24 meses"
+   }
+  },
+  {
+   "id": "I1-R002",
+   "linha": "L002",
+   "secao": "Processador",
+   "atributo": "passmark_cpu",
+   "tipo": "verificacao_externa",
+   "operador": ">=",
+   "valor": 11500,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "pontos",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Passmark (CPU Mark) mínima de 11.500"
+   }
+  },
+  {
+   "id": "I1-R003",
+   "linha": "L004",
+   "secao": "Processador",
+   "atributo": "freq_nucleos_performance",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2.0,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "GHz",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Núcleos de Performance: 2.0 GHz"
+   }
+  },
+  {
+   "id": "I1-R004",
+   "linha": "L005",
+   "secao": "Processador",
+   "atributo": "freq_nucleos_eficiencia",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1.3,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "GHz",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Núcleos de Eficiência: 1.3 GHz"
+   }
+  },
+  {
+   "id": "I1-R005",
+   "linha": "L006",
+   "secao": "Processador",
+   "atributo": "nucleos",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 4,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "no mínimo 4 núcleos"
+   }
+  },
+  {
+   "id": "I1-R006",
+   "linha": "L006",
+   "secao": "Processador",
+   "atributo": "threads",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 8,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "8 threads"
+   }
+  },
+  {
+   "id": "I1-R007",
+   "linha": "L007",
+   "secao": "Processador",
+   "atributo": "cache",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 3,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "MB",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "cache mínimo de 3MB"
+   }
+  },
+  {
+   "id": "I1-R008",
+   "linha": "L008",
+   "secao": "Processador",
+   "atributo": "gpu_integrada",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "GPU Integrada"
+   }
+  },
+  {
+   "id": "I1-R009",
+   "linha": "L009",
+   "secao": "Memória",
+   "atributo": "memoria_tecnologia",
+   "tipo": "norma",
+   "operador": ">=",
+   "valor": "DDR5",
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Tecnologia mínima DDR5"
+   }
+  },
+  {
+   "id": "I1-R010",
+   "linha": "L009",
+   "secao": "Memória",
+   "atributo": "memoria_frequencia",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 4800,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "MT/s",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Frequência mínima de 4.800 MT/s"
+   }
+  },
+  {
+   "id": "I1-R011",
+   "linha": "L010",
+   "secao": "Memória",
+   "atributo": "memoria_capacidade_pente_unico",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 8,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "GB",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "8GB ou superior (pente único)"
+   }
+  },
+  {
+   "id": "I1-R012",
+   "linha": "L011",
+   "secao": "Memória",
+   "atributo": "memoria_expansao",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 32,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "GB",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "expansão até 32GB"
+   }
+  },
+  {
+   "id": "I1-R013",
+   "linha": "L012",
+   "secao": "Unidades de armazenamento",
+   "atributo": "armazenamento_tecnologia",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "NVMe"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Tecnologia NVMe"
+   }
+  },
+  {
+   "id": "I1-R014",
+   "linha": "L013",
+   "secao": "Unidades de armazenamento",
+   "atributo": "armazenamento_capacidade",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 256,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "GB",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Capacidade mínima de 256GB"
+   }
+  },
+  {
+   "id": "I1-R015",
+   "linha": "L014",
+   "secao": "Unidades de armazenamento",
+   "atributo": "armazenamento_expansao_nvme",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "expansão com tecnologia NVMe"
+   }
+  },
+  {
+   "id": "I1-R016",
+   "linha": "L015",
+   "secao": "Unidades de armazenamento",
+   "atributo": "armazenamento_leitura",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 3200,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "MB/s",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "leitura de no mínimo 3200 MB/s"
+   }
+  },
+  {
+   "id": "I1-R017",
+   "linha": "L016",
+   "secao": "Unidades de armazenamento",
+   "atributo": "armazenamento_escrita",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2100,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "MB/s",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "escrita de no mínimo 2100 MB/s"
+   }
+  },
+  {
+   "id": "I1-R018",
+   "linha": "L017",
+   "secao": "Placa mãe",
+   "atributo": "placa_mae_fabricante",
+   "tipo": "texto_livre",
+   "operador": null,
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "mesmo fabricante do equipamento ou em regime de OEM"
+   }
+  },
+  {
+   "id": "I1-R019",
+   "linha": "L018",
+   "secao": "Placa mãe",
+   "atributo": "chipset_integrado",
+   "tipo": "texto_livre",
+   "operador": null,
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "chipset deve ser integrado ao processador"
+   }
+  },
+  {
+   "id": "I1-R020",
+   "linha": "L019",
+   "secao": "Placa mãe",
+   "atributo": "slots_memoria_ddr5",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Mínimo de 02 (dois) slots para memória do tipo DDR5"
+   }
+  },
+  {
+   "id": "I1-R021",
+   "linha": "L020",
+   "secao": "Placa mãe",
+   "atributo": "tpm",
+   "tipo": "norma",
+   "operador": ">=",
+   "valor": "TPM 2.0",
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "TPM 2.0 ou superior"
+   }
+  },
+  {
+   "id": "I1-R022",
+   "linha": "L022",
+   "secao": "Placa mãe",
+   "atributo": "slot_pcie_x16_g3",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "1 slot PCIe x16 de 3ª geração"
+   }
+  },
+  {
+   "id": "I1-R023",
+   "linha": "L023",
+   "secao": "Placa mãe",
+   "atributo": "slot_pcie_x1_g3",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "1 slot PCIe x1 de 3ª geração"
+   }
+  },
+  {
+   "id": "I1-R024",
+   "linha": "L024",
+   "secao": "Placa mãe",
+   "atributo": "slot_m2",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "1 slot M.2 2230/2280"
+   }
+  },
+  {
+   "id": "I1-R025",
+   "linha": "L025",
+   "secao": "Placa mãe",
+   "atributo": "slot_sata3",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "1 slot SATA 3.0"
+   }
+  },
+  {
+   "id": "I1-R026",
+   "linha": "L026",
+   "secao": "Fonte de Alimentação",
+   "atributo": "fonte_tensao_entrada",
+   "tipo": "faixa",
+   "operador": null,
+   "valor": null,
+   "valor_min": 100,
+   "valor_max": 240,
+   "unidade": "V",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "100 à 240 VAC"
+   }
+  },
+  {
+   "id": "I1-R027",
+   "linha": "L027",
+   "secao": "Fonte de Alimentação",
+   "atributo": "fonte_frequencia",
+   "tipo": "faixa",
+   "operador": null,
+   "valor": null,
+   "valor_min": 50,
+   "valor_max": 60,
+   "unidade": "Hz",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "50hz - 60Hz"
+   }
+  },
+  {
+   "id": "I1-R028",
+   "linha": "L027",
+   "secao": "Fonte de Alimentação",
+   "atributo": "fonte_selecao_automatica",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "seleção automática de tensão"
+   }
+  },
+  {
+   "id": "I1-R029",
+   "linha": "L028",
+   "secao": "Fonte de Alimentação",
+   "atributo": "fonte_potencia",
+   "tipo": "faixa",
+   "operador": null,
+   "valor": null,
+   "valor_min": 150,
+   "valor_max": 500,
+   "unidade": "W",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 3,
+    "trecho": "Potência entre 150W e 500W"
+   }
+  },
+  {
+   "id": "I1-R030",
+   "linha": "L029",
+   "secao": "Conectividade",
+   "atributo": "wifi",
+   "tipo": "norma",
+   "operador": ">=",
+   "valor": "Wi-Fi 6",
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Wi-Fi 6 (802.11ax) ou superior"
+   }
+  },
+  {
+   "id": "I1-R031",
+   "linha": "L030",
+   "secao": "Conectividade",
+   "atributo": "ethernet",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "Gbps",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Ethernet RJ-45 Gigabit"
+   }
+  },
+  {
+   "id": "I1-R032",
+   "linha": "L031",
+   "secao": "Conectividade",
+   "atributo": "bluetooth",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Bluetooth"
+   }
+  },
+  {
+   "id": "I1-R033",
+   "linha": "L032",
+   "secao": "Gabinete",
+   "atributo": "gabinete_formato",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "compacto",
+    "mini desktop",
+    "slim desktop"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "“compacto”, “mini desktop” ou “slim desktop”"
+   }
+  },
+  {
+   "id": "I1-R034",
+   "linha": "L033",
+   "secao": "Gabinete",
+   "atributo": "gabinete_construcao",
+   "tipo": "texto_livre",
+   "operador": null,
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "otimização do fluxo de ar interno"
+   }
+  },
+  {
+   "id": "I1-R035",
+   "linha": "L034",
+   "secao": "Peso",
+   "atributo": "peso_gabinete",
+   "tipo": "numerico",
+   "operador": "<=",
+   "valor": 6,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "kg",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "No máximo - 6kg"
+   }
+  },
+  {
+   "id": "I1-R036",
+   "linha": "L035",
+   "secao": "Interfaces frontais",
+   "atributo": "usb2_frontal",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "2 portas USB 2.0"
+   }
+  },
+  {
+   "id": "I1-R037",
+   "linha": "L036",
+   "secao": "Interfaces frontais",
+   "atributo": "usb32g1_frontal",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "2 portas USB 3.2 de 1ª geração"
+   }
+  },
+  {
+   "id": "I1-R038",
+   "linha": "L037",
+   "secao": "Interfaces traseiras",
+   "atributo": "usb2_traseira",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "2 portas USB 2.0"
+   }
+  },
+  {
+   "id": "I1-R039",
+   "linha": "L038",
+   "secao": "Interfaces traseiras",
+   "atributo": "usb32g1_traseira",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 2,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "2 portas USB 3.2 de 1ª geração"
+   }
+  },
+  {
+   "id": "I1-R040",
+   "linha": "L039",
+   "secao": "Interfaces traseiras",
+   "atributo": "video_dp_ou_dvi",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "1 porta display port 1.4 ou DVI"
+   }
+  },
+  {
+   "id": "I1-R041",
+   "linha": "L040",
+   "secao": "Interfaces traseiras",
+   "atributo": "hdmi_21",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "1 porta HDMI 2.1"
+   }
+  },
+  {
+   "id": "I1-R042",
+   "linha": "L041",
+   "secao": "Interfaces traseiras",
+   "atributo": "rj45_traseira",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "1 porta Ethernet RJ-45 (1 Gbps)"
+   }
+  },
+  {
+   "id": "I1-R043",
+   "linha": "L042",
+   "secao": "Interfaces traseiras",
+   "atributo": "audio_microfone",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Conexões de áudio e microfone"
+   }
+  },
+  {
+   "id": "I1-R044",
+   "linha": "L043",
+   "secao": "Interfaces traseiras",
+   "atributo": "conector_headset",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 1,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "un",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "1 conector de saída headset e microfone (3,5mm)"
+   }
+  },
+  {
+   "id": "I1-R045",
+   "linha": "L044",
+   "secao": "Sistema Operacional",
+   "atributo": "sistema_operacional",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "Windows 11 Pro x64"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Microsoft Windows 11 Pro x64"
+   }
+  },
+  {
+   "id": "I1-R046",
+   "linha": "L044",
+   "secao": "Sistema Operacional",
+   "atributo": "so_idioma",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "Português do Brasil"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Português do Brasil"
+   }
+  },
+  {
+   "id": "I1-R047",
+   "linha": "L044",
+   "secao": "Sistema Operacional",
+   "atributo": "so_chave_bios",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "chave de ativação gravada na memória flash da BIOS"
+   }
+  },
+  {
+   "id": "I1-R048",
+   "linha": "L045",
+   "secao": "Periféricos",
+   "atributo": "teclado_abnt2",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Teclado ABNT2"
+   }
+  },
+  {
+   "id": "I1-R049",
+   "linha": "L046",
+   "secao": "Periféricos",
+   "atributo": "mouse_optico",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Mouse óptico"
+   }
+  },
+  {
+   "id": "I1-R050",
+   "linha": "L047",
+   "secao": "Monitor",
+   "atributo": "monitor_tipo",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "LCD TFT LED"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Tipo LCD TFT LED"
+   }
+  },
+  {
+   "id": "I1-R051",
+   "linha": "L048",
+   "secao": "Monitor",
+   "atributo": "monitor_tamanho",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 21,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "pol",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "No mínimo - 21\""
+   }
+  },
+  {
+   "id": "I1-R052",
+   "linha": "L049",
+   "secao": "Monitor",
+   "atributo": "monitor_painel",
+   "tipo": "opcao",
+   "operador": "in",
+   "valor": null,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": [
+    "IPS"
+   ],
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Tecnologia IPS"
+   }
+  },
+  {
+   "id": "I1-R053",
+   "linha": "L050",
+   "secao": "Monitor",
+   "atributo": "monitor_resolucao",
+   "tipo": "norma",
+   "operador": ">=",
+   "valor": "Full HD",
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Full HD"
+   }
+  },
+  {
+   "id": "I1-R054",
+   "linha": "L050",
+   "secao": "Monitor",
+   "atributo": "monitor_widescreen",
+   "tipo": "booleano",
+   "operador": "=",
+   "valor": true,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": null,
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Widescreen"
+   }
+  },
+  {
+   "id": "I1-R055",
+   "linha": "L051",
+   "secao": "Monitor",
+   "atributo": "monitor_taxa",
+   "tipo": "numerico",
+   "operador": ">=",
+   "valor": 60,
+   "valor_min": null,
+   "valor_max": null,
+   "unidade": "Hz",
+   "opcoes": null,
+   "obrigatorio": true,
+   "origem": {
+    "documento": "TR 222/2026",
+    "pagina": 4,
+    "trecho": "Taxa de atualização mínima de 60Hz"
+   }
+  }
+ ],
+ "gerais": [
+  {
+   "id": "G-R001",
+   "origem_linha": "geral-L001",
+   "atributo": "linha_corporativa_serie",
+   "tipo": "texto_livre",
+   "fonte": "Requisitos gerais do TR",
+   "trecho": "novos, de primeiro uso, de linha corporativa, produzidos em série"
+  },
+  {
+   "id": "G-R002",
+   "origem_linha": "geral-L001",
+   "atributo": "vedado_montagem_artesanal",
+   "tipo": "texto_livre",
+   "fonte": "Requisitos gerais do TR",
+   "trecho": "vedada a entrega de equipamentos montados de forma artesanal"
+  },
+  {
+   "id": "G-R003",
+   "origem_linha": "geral-L002",
+   "atributo": "cabo_forca_nbr14136",
+   "tipo": "norma",
+   "fonte": "Requisitos gerais do TR",
+   "trecho": "ABNT NBR 14136"
+  },
+  {
+   "id": "G-R004",
+   "origem_linha": "geral-L003",
+   "atributo": "homogeneidade_modelo",
+   "tipo": "texto_livre",
+   "fonte": "Requisitos gerais do TR",
+   "trecho": "homogeneidade de modelo, arquitetura e componentes principais"
+  },
+  {
+   "id": "G-R005",
+   "origem_linha": "TR 4.1.1",
+   "atributo": "energy_star_epeat",
+   "tipo": "norma",
+   "fonte": "TR, cap. 4 (prosa)",
+   "trecho": "Energy Star e/ou EPEAT Silver ou superior"
+  },
+  {
+   "id": "G-R006",
+   "origem_linha": "TR 5.2",
+   "atributo": "prazo_entrega",
+   "tipo": "numerico",
+   "fonte": "TR, cap. 5 (prosa)",
+   "trecho": "até 60 (sessenta) dias corridos"
+  },
+  {
+   "id": "G-R007",
+   "origem_linha": "TR 5.6",
+   "atributo": "garantia",
+   "tipo": "numerico",
+   "fonte": "TR, cap. 5 (prosa)",
+   "trecho": "no mínimo, 36 (trinta e seis) meses"
+  },
+  {
+   "id": "G-R008",
+   "origem_linha": "Edital 5.1",
+   "atributo": "campos_marca_fabricante",
+   "tipo": "booleano",
+   "fonte": "Edital, item 5.1 (prosa)",
+   "trecho": "Marca; Fabricante"
+  },
+  {
+   "id": "G-R009",
+   "origem_linha": "Edital 5.8",
+   "atributo": "validade_proposta",
+   "tipo": "numerico",
+   "fonte": "Edital, item 5.8 (prosa)",
+   "trecho": "não será inferior a 60 (sessenta) dias"
+  }
+ ]
+}

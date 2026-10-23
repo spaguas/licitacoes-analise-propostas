@@ -1,0 +1,85 @@
+/* Estrutura: barra lateral azul-marinho com ondas, barra superior, área de conteúdo e login. */
+.aplicacao { min-height: 100vh; }
+.conteudo { margin-left: var(--largura-lateral); min-height: 100vh; }
+.pagina { max-width: 1240px; margin: 0 auto; padding: 32px 40px 80px; display: grid; gap: 22px; }
+
+.lateral {
+  position: fixed; inset: 0 auto 0 0; width: var(--largura-lateral); overflow-y: auto;
+  display: flex; flex-direction: column; gap: 12px; padding: 26px 18px 120px;
+  background: linear-gradient(180deg, var(--marinho-900) 0%, var(--marinho-800) 58%, var(--marinho-700) 100%);
+  color: #dce8f0;
+}
+.marca { display: grid; justify-items: center; gap: 8px; margin: 4px 0 18px; text-align: center; }
+.marca-logo { width: 150px; max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.marca-texto { font-family: var(--fonte-titulo); font-weight: 900; font-size: 28px; color: #fff; }
+.marca-produto { color: var(--ciano); font-weight: 700; font-size: var(--t-rotulo); letter-spacing: .12em; text-transform: uppercase; }
+.lateral-rotulo { margin: 14px 6px 2px; color: #8fb0c6; font-size: var(--t-rotulo); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.lateral-org { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; border: 1px solid rgb(255 255 255 / 14%); border-radius: var(--raio); background: rgb(255 255 255 / 6%); }
+.lateral-org strong { color: #fff; } .lateral-org span { color: #a9c4d6; font-size: var(--t-rotulo); }
+.lateral-nav { display: grid; gap: 4px; }
+.lateral-nav button, .lateral-recentes button {
+  display: flex; align-items: center; gap: 12px; width: 100%; padding: 11px 12px; border: 0; border-radius: var(--raio);
+  background: none; color: #c4d7e4; text-align: left; cursor: pointer; font-size: 17px; font-weight: 600;
+}
+.lateral-nav button span { flex: 1; }
+.lateral-nav em { font-style: normal; color: #8fb0c6; font-size: var(--t-rotulo); }
+.lateral-nav button:hover, .lateral-recentes button:hover { background: rgb(255 255 255 / 6%); color: #fff; }
+.lateral-nav button.ativo, .lateral-recentes button.ativo { background: rgb(76 195 230 / 14%); box-shadow: inset 3px 0 0 var(--ciano); color: #fff; }
+.lateral-recentes { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.lateral-recentes .vazio { padding: 6px 12px; color: #8fb0c6; font-size: var(--t-rotulo); }
+.lateral-recentes i { width: 8px; height: 8px; border-radius: 50%; background: var(--ciano); flex: none; }
+.lateral-recentes span { display: grid; min-width: 0; }
+.lateral-recentes strong { font-size: 16px; color: #e8f1f7; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lateral-recentes small { color: #8fb0c6; }
+.lateral-rodape { margin-top: auto; border-top: 1px solid rgb(255 255 255 / 12%); padding-top: 14px; position: relative; z-index: 1; }
+.perfil { display: flex; align-items: center; gap: 10px; }
+.perfil > span:nth-child(2) { display: grid; flex: 1; } .perfil strong { color: #fff; } .perfil small { color: #8fb0c6; }
+.avatar { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--ciano); color: var(--marinho-900); font-weight: 700; }
+.perfil-sair { border: 0; background: none; color: #a9c4d6; cursor: pointer; padding: 6px; border-radius: 6px; }
+.perfil-sair:hover { color: #fff; background: rgb(255 255 255 / 8%); }
+
+/* Faixas de ondas da identidade SP Águas */
+.ondas {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 96px; pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 96' preserveAspectRatio='none'%3E%3Cpath d='M0 24 C80 15 180 32 300 13' fill='none' stroke='%23fff' stroke-opacity='.35'/%3E%3Cpath d='M0 36 C90 27 190 45 300 29 V96 H0Z' fill='%230f3a5a'/%3E%3Cpath d='M0 50 C90 41 190 59 300 44 V96 H0Z' fill='%2313597a'/%3E%3Cpath d='M0 63 C90 55 190 70 300 58 V96 H0Z' fill='%2317775c'/%3E%3Cpath d='M0 74 C90 68 190 81 300 70 V96 H0Z' fill='%231b6fa8'/%3E%3Cpath d='M0 85 C90 80 190 91 300 82 V96 H0Z' fill='%232a86c4'/%3E%3C/svg%3E") bottom / 100% 100% no-repeat;
+}
+.lateral .ondas { position: fixed; width: var(--largura-lateral); right: auto; }
+
+.superior {
+  position: sticky; top: 0; z-index: 5; display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  padding: 14px 40px; border-bottom: 1px solid var(--linha); background: rgb(241 245 247 / 95%); backdrop-filter: blur(6px);
+}
+.trilha { display: flex; gap: 10px; font-size: var(--t-rotulo); font-weight: 700; letter-spacing: .12em; color: #7d8f9e; white-space: nowrap; }
+.trilha strong { color: var(--marinho-800); }
+.superior-acoes { display: flex; align-items: center; gap: 18px; }
+.estado { display: flex; align-items: center; gap: 8px; color: var(--texto-suave); font-size: var(--t-rotulo); white-space: nowrap; }
+.estado i { width: 9px; height: 9px; border-radius: 50%; background: var(--ok); }
+.estado.ocupado i { background: var(--ciano); animation: pulso 1.2s infinite; }
+@keyframes pulso { 50% { opacity: .3; } }
+
+.login { min-height: 100vh; display: grid; grid-template-columns: 1fr minmax(360px, 460px); align-items: center; gap: 48px; padding: 48px 8vw 140px; position: relative;
+  background: linear-gradient(160deg, var(--marinho-900), var(--marinho-700)); color: #dce8f0; }
+.login-marca { display: grid; gap: 14px; max-width: 520px; }
+.login-logo { width: 220px; height: auto; }
+.login-marca h1 { color: #fff; font-size: 40px; }
+.rotulo-claro { color: var(--ciano); font-size: var(--t-rotulo); font-weight: 700; letter-spacing: .14em; }
+.login-cartao { display: grid; gap: 16px; padding: 32px; border-radius: 12px; background: #fff; color: var(--texto); box-shadow: 0 20px 40px rgb(0 0 0 / 25%); position: relative; z-index: 1; }
+.ondas-login { height: 120px; }
+
+@media (max-width: 960px) {
+  :root { --largura-lateral: 76px; }
+  .lateral { padding: 18px 10px 100px; }
+  .marca-produto, .lateral-rotulo, .lateral-org, .lateral-recentes, .lateral-nav span, .lateral-nav em, .perfil > span:nth-child(2) { display: none; }
+  .marca { margin: 0; } .marca-logo { width: 52px; } .marca-texto { font-size: 15px; }
+  .lateral-nav button { justify-content: center; }
+  .pagina, .superior { padding-left: 18px; padding-right: 18px; }
+  .estado { display: none; }
+  .login { grid-template-columns: 1fr; }
+}
+
+/* Links da tela de acesso (esqueci a senha / criar conta) */
+.login-links { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 15px; color: var(--texto-suave); }
+.login-links .link { font-size: 15px; }
+
+.lateral-nav em.contador-pendencias { display: grid; place-items: center; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; background: #f5a524; color: var(--marinho-900); font-weight: 700; }
+.lateral-nav em.contador-alertas { display: grid; place-items: center; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; background: #e5484d; color: #fff; font-weight: 700; }

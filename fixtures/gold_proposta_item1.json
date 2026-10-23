@@ -1,0 +1,373 @@
+{
+ "fornecedor": {
+  "cnpj": "64.911.773/0001-02",
+  "razao_social": "RASCORP EMPRESA DE GERENCIAMENTO DE SOBRESSALENTES E AUTOMACAO LTDA"
+ },
+ "itens": [
+  {
+   "item": "1",
+   "marca": "GRUPO GAMING INFO",
+   "fabricante": null,
+   "modelo": "PC GAMER RYZEN 7 5700G",
+   "quantidade": 36,
+   "valor_unitario": 5550.0,
+   "especificacoes": [
+    {
+     "id": "E001",
+     "atributo_declarado": "marca",
+     "valor": "GRUPO GAMING INFO",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "GRUPO GAMING INFO",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E002",
+     "atributo_declarado": "modelo",
+     "valor": "PC GAMER RYZEN 7 5700G",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "PC GAMER RYZEN 7",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E003",
+     "atributo_declarado": "placa_mae_chipset",
+     "valor": "A520",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "-A520",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E004",
+     "atributo_declarado": "processador",
+     "valor": "Ryzen 7 5700G",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "-RYZEN 7 5700G",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E005",
+     "atributo_declarado": "memoria_tipo",
+     "valor": "DDR",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "MEMÓRIA RAM DDR",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E006",
+     "atributo_declarado": "memoria_capacidade",
+     "valor": 32,
+     "unidade": "GB",
+     "vago": false,
+     "alternativas": [
+      "32GB",
+      "2x16GB"
+     ],
+     "origem": {
+      "pagina": 1,
+      "trecho": "32GB OU 2X16GB",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E007",
+     "atributo_declarado": "memoria_modulos",
+     "valor": 1,
+     "unidade": "un",
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "MÓDULO DE MEMÓRIA RAM 1",
+      "fonte": "celula"
+     }
+    },
+    {
+     "id": "E008",
+     "atributo_declarado": "memoria_observacao",
+     "valor": "enviamos conforme estoque",
+     "unidade": null,
+     "vago": true,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "ENVIAMOS CONFORME ESTOQUE",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E009",
+     "atributo_declarado": "armazenamento_capacidade",
+     "valor": 1,
+     "unidade": "TB",
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "-SSD 1TB",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E010",
+     "atributo_declarado": "fonte_potencia",
+     "valor": 650,
+     "unidade": "W",
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "-650W",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E011",
+     "atributo_declarado": "fonte_selecao_tensao",
+     "valor": "bivolt automático ou manual",
+     "unidade": null,
+     "vago": true,
+     "alternativas": [
+      "automático",
+      "manual"
+     ],
+     "origem": {
+      "pagina": 1,
+      "trecho": "FONTE BIVOLT AUTOMÁTICO OU MANUAL",
+      "fonte": "celula"
+     }
+    },
+    {
+     "id": "E012",
+     "atributo_declarado": "cabo_forca",
+     "valor": "acompanha cabo de força",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 2,
+      "trecho": "ACOMPANHA CABO DE FORÇA",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E013",
+     "atributo_declarado": "sistema_operacional",
+     "valor": "Windows 10 Pro (Trial)",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 2,
+      "trecho": "-WINDOWS 10 TRIAL",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E014",
+     "atributo_declarado": "so_chave",
+     "valor": "não acompanha chave de ativação",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 2,
+      "trecho": "NÃO ACOMPANHA CHAVE DE ATIVAÇÃO",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E015",
+     "atributo_declarado": "gabinete_formato",
+     "valor": "ATX",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 2,
+      "trecho": "-ATX MODELO CONFORME ESTOQUE"
+     }
+    },
+    {
+     "id": "E016",
+     "atributo_declarado": "montagem",
+     "valor": "montado pelo fornecedor, com pasta térmica",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 2,
+      "trecho": "JÁ ENVIAMOS COM PASTA TÉRMICA E MONTADO",
+      "fonte": "celula"
+     }
+    },
+    {
+     "id": "E017",
+     "atributo_declarado": "placa_grafica",
+     "valor": "Vega 8",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "PLACA GRÁFICA VEGA 8",
+      "fonte": "celula"
+     }
+    },
+    {
+     "id": "E018",
+     "atributo_declarado": "placa_mae_marca",
+     "valor": "conforme estoque",
+     "unidade": null,
+     "vago": true,
+     "alternativas": null,
+     "origem": {
+      "pagina": 2,
+      "trecho": "MARCA DA PLACA-MÃE CONFORME ESTOQUE",
+      "fonte": "celula"
+     }
+    },
+    {
+     "id": "E019",
+     "atributo_declarado": "monitor_incluso",
+     "valor": false,
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 2,
+      "trecho": "COM MONITOR NÃO",
+      "fonte": "celula"
+     }
+    },
+    {
+     "id": "E020",
+     "atributo_declarado": "prazo_entrega",
+     "valor": 30,
+     "unidade": "dia",
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 4,
+      "trecho": "PRAZO DE ENTREGA É DE 30 DIAS",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E021",
+     "atributo_declarado": "validade_proposta",
+     "valor": 90,
+     "unidade": "dia",
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 4,
+      "trecho": "VALIDADE DA PROPOSTA: 90",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E022",
+     "atributo_declarado": "garantia",
+     "valor": 24,
+     "unidade": "mes",
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 4,
+      "trecho": "GARANTIA DE 24 MESES",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E023",
+     "atributo_declarado": "valor_unitario",
+     "valor": 5550.0,
+     "unidade": "BRL",
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "R$ 5.550,00",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E024",
+     "atributo_declarado": "quantidade",
+     "valor": 36,
+     "unidade": "un",
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 1,
+      "trecho": "36 R$ 5.550,00",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E025",
+     "atributo_declarado": "referencia_externa",
+     "valor": "link de marketplace com preço R$ 4.093,60 (não é o preço ofertado)",
+     "unidade": null,
+     "vago": false,
+     "alternativas": null,
+     "origem": {
+      "pagina": 6,
+      "trecho": "R$4.093,60",
+      "fonte": "pagina"
+     }
+    },
+    {
+     "id": "E026",
+     "atributo_declarado": "gabinete_modelo",
+     "valor": "conforme estoque",
+     "unidade": null,
+     "vago": true,
+     "alternativas": null,
+     "origem": {
+      "pagina": 2,
+      "trecho": "-ATX MODELO CONFORME ESTOQUE"
+     }
+    }
+   ]
+  }
+ ],
+ "nao_informado_pela_proposta": [
+  "fabricante",
+  "Wi-Fi",
+  "Bluetooth",
+  "TPM",
+  "portas USB/HDMI/DisplayPort",
+  "teclado",
+  "mouse",
+  "peso",
+  "Energy Star/EPEAT",
+  "velocidade do SSD",
+  "tecnologia NVMe"
+ ]
+}

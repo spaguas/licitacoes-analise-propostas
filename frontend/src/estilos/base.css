@@ -1,0 +1,66 @@
+/* Identidade SP Águas: variáveis de cor, fonte e espaçamento usadas em toda a aplicação. */
+:root {
+  --marinho-900: #0a2238;
+  --marinho-800: #0d3150;
+  --marinho-700: #124467;
+  --petroleo: #136f8f;
+  --petroleo-escuro: #0d5672;
+  --petroleo-suave: #e4f1f6;
+  --ciano: #4cc3e6;
+  --ciano-texto: #1f7fa6;
+  --fundo: #f1f5f7;
+  --cartao: #ffffff;
+  --linha: #dbe4e9;
+  --texto: #13283a;
+  --texto-suave: #55697a;
+
+  --ok: #1e7a46;        --ok-fundo: #e5f4ea;
+  --erro: #b42318;      --erro-fundo: #fdecea;
+  --atencao: #9a5b00;   --atencao-fundo: #fff4dc;
+  --neutro: #4b5b69;    --neutro-fundo: #eef1f4;
+  --externo: #1d5fa8;   --externo-fundo: #e6f0fb;
+  --revisar: #6b3fa0;   --revisar-fundo: #f1eafa;
+
+  --fonte-titulo: 'Merriweather', Georgia, 'Times New Roman', serif;
+  --fonte-texto: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
+  --raio: 8px;
+  --sombra: 0 1px 2px rgb(10 34 56 / 6%);
+  --largura-lateral: 300px;
+
+  /* Tamanhos mínimos: 14 px em rótulos e 16 px em texto e tabelas. */
+  --t-rotulo: 14px;
+  --t-texto: 16px;
+  --t-titulo-pagina: 32px;
+  --t-titulo-secao: 24px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--fonte-texto);
+  font-size: var(--t-texto);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: var(--fonte-titulo); color: var(--marinho-900); margin: 0; line-height: 1.25; }
+h1 { font-size: var(--t-titulo-pagina); }
+h2 { font-size: var(--t-titulo-secao); }
+h3 { font-size: 19px; display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+p { margin: 0; }
+small { font-size: var(--t-rotulo); }
+button, input, select, textarea { font: inherit; color: inherit; }
+input, select, textarea {
+  width: 100%; padding: 10px 12px; border: 1px solid var(--linha); border-radius: 6px; background: #fff; font-size: var(--t-texto);
+}
+input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible {
+  outline: 3px solid var(--ciano); outline-offset: 2px;
+}
+label { display: grid; gap: 6px; font-weight: 600; font-size: var(--t-rotulo); color: var(--texto-suave); }
+.icone { flex: none; }
+.rotulo { color: var(--ciano-texto); font-size: var(--t-rotulo); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.ajuda { color: var(--texto-suave); font-size: var(--t-rotulo); }
+.cresce { flex: 1; }
+.link { background: none; border: 0; padding: 0; color: var(--petroleo); font-weight: 700; cursor: pointer; text-decoration: underline; }
+.carregando { padding: 40px; color: var(--texto-suave); }

@@ -1,0 +1,697 @@
+{
+ "item_1": {
+  "descricao": "Desktop Básico",
+  "requisitos": [
+   {
+    "id": "item_1-L001",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Deverá ter sido lançado há no máximo 24 meses da data da entrega.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L002",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Deverá ter pontuação Passmark (CPU Mark) mínima de 11.500 pontos.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L003",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Deverá ter frequência mínima:",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L004",
+    "secao": "Processador",
+    "nivel": 2,
+    "texto": "Núcleos de Performance: 2.0 GHz",
+    "pagina": 3,
+    "pai": "item_1-L003"
+   },
+   {
+    "id": "item_1-L005",
+    "secao": "Processador",
+    "nivel": 2,
+    "texto": "Núcleos de Eficiência: 1.3 GHz",
+    "pagina": 3,
+    "pai": "item_1-L003"
+   },
+   {
+    "id": "item_1-L006",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Deverá ter no mínimo 4 núcleos e 8 threads.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L007",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Deverá ter cache mínimo de 3MB.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L008",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Deverá ter GPU Integrada.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L009",
+    "secao": "Memória",
+    "nivel": 1,
+    "texto": "Tecnologia mínima DDR5 - Frequência mínima de 4.800 MT/s",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L010",
+    "secao": "Memória",
+    "nivel": 1,
+    "texto": "Capacidade de 8GB ou superior (pente único)",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L011",
+    "secao": "Memória",
+    "nivel": 1,
+    "texto": "Deverá ter capacidade de expansão até 32GB (múltiplos pentes)",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L012",
+    "secao": "Unidades de armazenamento",
+    "nivel": 1,
+    "texto": "Tecnologia NVMe",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L013",
+    "secao": "Unidades de armazenamento",
+    "nivel": 1,
+    "texto": "Capacidade mínima de 256GB",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L014",
+    "secao": "Unidades de armazenamento",
+    "nivel": 1,
+    "texto": "Deverá ter capacidade de expansão com tecnologia NVMe",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L015",
+    "secao": "Unidades de armazenamento",
+    "nivel": 1,
+    "texto": "Deverá apresentar taxas de transferência de leitura de no mínimo 3200 MB/s.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L016",
+    "secao": "Unidades de armazenamento",
+    "nivel": 1,
+    "texto": "Deverá apresentar taxas de transferência de escrita de no mínimo 2100 MB/s.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L017",
+    "secao": "Placa mãe",
+    "nivel": 1,
+    "texto": "Deverá ser projetada e desenvolvida pelo mesmo fabricante do equipamento ou em regime de OEM.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L018",
+    "secao": "Placa mãe",
+    "nivel": 1,
+    "texto": "O chipset deve ser integrado ao processador.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L019",
+    "secao": "Placa mãe",
+    "nivel": 1,
+    "texto": "Mínimo de 02 (dois) slots para memória do tipo DDR5.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L020",
+    "secao": "Placa mãe",
+    "nivel": 1,
+    "texto": "Deverá possuir chip de segurança TPM 2.0 ou superior, integrado à Placa Mãe.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L021",
+    "secao": "Placa mãe",
+    "nivel": 1,
+    "texto": "Slots:",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L022",
+    "secao": "Placa mãe",
+    "nivel": 2,
+    "texto": "No mínimo - 1 slot PCIe x16 de 3ª geração",
+    "pagina": 3,
+    "pai": "item_1-L021"
+   },
+   {
+    "id": "item_1-L023",
+    "secao": "Placa mãe",
+    "nivel": 2,
+    "texto": "No mínimo - 1 slot PCIe x1 de 3ª geração",
+    "pagina": 3,
+    "pai": "item_1-L021"
+   },
+   {
+    "id": "item_1-L024",
+    "secao": "Placa mãe",
+    "nivel": 2,
+    "texto": "No mínimo - 1 slot M.2 2230/2280 para unidade de estado sólido.",
+    "pagina": 3,
+    "pai": "item_1-L021"
+   },
+   {
+    "id": "item_1-L025",
+    "secao": "Placa mãe",
+    "nivel": 2,
+    "texto": "No mínimo - 1 slot SATA 3.0 para disco rígido 3.5\"",
+    "pagina": 3,
+    "pai": "item_1-L021"
+   },
+   {
+    "id": "item_1-L026",
+    "secao": "Fonte de Alimentação",
+    "nivel": 1,
+    "texto": "Fonte de alimentação para corrente alternada com tensões de entrada de 100 à 240 VAC (+/- 10%).",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L027",
+    "secao": "Fonte de Alimentação",
+    "nivel": 1,
+    "texto": "Frequência de operação 50hz - 60Hz - Com seleção automática de tensão.",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L028",
+    "secao": "Fonte de Alimentação",
+    "nivel": 1,
+    "texto": "Potência entre 150W e 500W",
+    "pagina": 3
+   },
+   {
+    "id": "item_1-L029",
+    "secao": "Conectividade",
+    "nivel": 1,
+    "texto": "Placa de rede local sem fio (WLAN) - Wi-Fi 6 (802.11ax) ou superior",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L030",
+    "secao": "Conectividade",
+    "nivel": 1,
+    "texto": "Rede local com fio (LAN) - Ethernet RJ-45 Gigabit 10/100/1000 Mbps",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L031",
+    "secao": "Conectividade",
+    "nivel": 1,
+    "texto": "Bluetooth",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L032",
+    "secao": "Gabinete",
+    "nivel": 1,
+    "texto": "Poderá ser dos tipos “compacto”, “mini desktop” ou “slim desktop”.",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L033",
+    "secao": "Gabinete",
+    "nivel": 1,
+    "texto": "A arquitetura de construção do gabinete deverá estar projetada para otimização do fluxo de ar interno e melhor refrigeração dos componentes internos, bem como a diminuição dos níveis de ruído, compatível com a placa mãe ofertada, não deverá haver partes cortantes tanto na área interna como externa do gabinete.",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L034",
+    "secao": "Peso",
+    "nivel": 1,
+    "texto": "No máximo - 6kg (Gabinete com seus componentes internos)",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L035",
+    "secao": "Interfaces frontais",
+    "nivel": 1,
+    "texto": "No mínimo - 2 portas USB 2.0",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L036",
+    "secao": "Interfaces frontais",
+    "nivel": 1,
+    "texto": "No mínimo - 2 portas USB 3.2 de 1ª geração",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L037",
+    "secao": "Interfaces traseiras",
+    "nivel": 1,
+    "texto": "No mínimo - 2 portas USB 2.0",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L038",
+    "secao": "Interfaces traseiras",
+    "nivel": 1,
+    "texto": "No mínimo - 2 portas USB 3.2 de 1ª geração",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L039",
+    "secao": "Interfaces traseiras",
+    "nivel": 1,
+    "texto": "No mínimo - 1 porta display port 1.4 ou DVI",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L040",
+    "secao": "Interfaces traseiras",
+    "nivel": 1,
+    "texto": "No mínimo - 1 porta HDMI 2.1",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L041",
+    "secao": "Interfaces traseiras",
+    "nivel": 1,
+    "texto": "No mínimo - 1 porta Ethernet RJ-45 (1 Gbps)",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L042",
+    "secao": "Interfaces traseiras",
+    "nivel": 1,
+    "texto": "Conexões de áudio e microfone",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L043",
+    "secao": "Interfaces traseiras",
+    "nivel": 1,
+    "texto": "No mínimo - 1 conector de saída headset e microfone (3,5mm), sendo aceito conector do tipo combo.",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L044",
+    "secao": "Sistema Operacional",
+    "nivel": 1,
+    "texto": "Cada equipamento deverá ser acompanhado de uma licença do Microsoft Windows 11 Pro x64 com atualização cumulativa mais recente ou superior com upgrade garantido de acordo com as regras da Microsoft, em Português do Brasil, com a respectiva chave de ativação gravada na memória flash da BIOS, reconhecida automaticamente na instalação do Sistema Operacional.",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L045",
+    "secao": "Periféricos",
+    "nivel": 1,
+    "texto": "Teclado ABNT2 com ou sem fio.",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L046",
+    "secao": "Periféricos",
+    "nivel": 1,
+    "texto": "Mouse óptico com ou sem fio.",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L047",
+    "secao": "Monitor",
+    "nivel": 1,
+    "texto": "Tipo LCD TFT LED",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L048",
+    "secao": "Monitor",
+    "nivel": 1,
+    "texto": "No mínimo - 21\"",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L049",
+    "secao": "Monitor",
+    "nivel": 1,
+    "texto": "Tecnologia IPS",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L050",
+    "secao": "Monitor",
+    "nivel": 1,
+    "texto": "Full HD - Widescreen",
+    "pagina": 4
+   },
+   {
+    "id": "item_1-L051",
+    "secao": "Monitor",
+    "nivel": 1,
+    "texto": "Taxa de atualização mínima de 60Hz",
+    "pagina": 4
+   }
+  ]
+ },
+ "item_2": {
+  "descricao": "Notebook Básico",
+  "requisitos": [
+   {
+    "id": "item_2-L001",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Processador lançado há no máximo 24 meses da data de entrega",
+    "pagina": 4
+   },
+   {
+    "id": "item_2-L002",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Deverá ter uma pontuação Passmark (CPU Mark) mínima de 11.000 pontos.",
+    "pagina": 4
+   },
+   {
+    "id": "item_2-L003",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Deverá ter uma frequência mínima:",
+    "pagina": 4
+   },
+   {
+    "id": "item_2-L004",
+    "secao": "Processador",
+    "nivel": 2,
+    "texto": "Núcleos de Performance: 2.0 GHz",
+    "pagina": 5,
+    "pai": "item_2-L003"
+   },
+   {
+    "id": "item_2-L005",
+    "secao": "Processador",
+    "nivel": 2,
+    "texto": "Núcleos de Eficiência: 1.3 GHz",
+    "pagina": 5,
+    "pai": "item_2-L003"
+   },
+   {
+    "id": "item_2-L006",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Deverá ter no mínimo 4 núcleos e 8 threads",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L007",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Deverá ter um cache mínimo de 4MB",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L008",
+    "secao": "Processador",
+    "nivel": 1,
+    "texto": "Deverá ter GPU embutida.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L009",
+    "secao": "Memória",
+    "nivel": 1,
+    "texto": "Tecnologia mínima DDR5 - Frequência mínima de 4.400 MT/s",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L010",
+    "secao": "Memória",
+    "nivel": 1,
+    "texto": "Capacidade 8GB ou superior (pente único)",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L011",
+    "secao": "Memória",
+    "nivel": 1,
+    "texto": "Deverá ter capacidade expansão até 16GB - DDR5",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L012",
+    "secao": "Unidades de armazenamento",
+    "nivel": 1,
+    "texto": "Tecnologia NVMe.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L013",
+    "secao": "Unidades de armazenamento",
+    "nivel": 1,
+    "texto": "Capacidade mínima de 256GB",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L014",
+    "secao": "Unidades de armazenamento",
+    "nivel": 1,
+    "texto": "Deverá apresentar taxas de transferência de leitura de no mínimo 3200 MB/s.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L015",
+    "secao": "Unidades de armazenamento",
+    "nivel": 1,
+    "texto": "Deverá apresentar taxas de transferência de escrita de no mínimo 2100 MB/s.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L016",
+    "secao": "Tela",
+    "nivel": 1,
+    "texto": "Tamanho de no mínimo 14 polegadas.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L017",
+    "secao": "Tela",
+    "nivel": 1,
+    "texto": "Tecnologia WVA ou IPS",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L018",
+    "secao": "Tela",
+    "nivel": 1,
+    "texto": "Resolução mínima Full HD - 1920x1080",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L019",
+    "secao": "Tela",
+    "nivel": 1,
+    "texto": "Taxa de atualização mínima de 60Hz",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L020",
+    "secao": "Tela",
+    "nivel": 1,
+    "texto": "Antirreflexo",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L021",
+    "secao": "Placa mãe",
+    "nivel": 1,
+    "texto": "Deverá ser projetada e desenvolvida pelo mesmo fabricante do equipamento ou em regime de OEM.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L022",
+    "secao": "Placa mãe",
+    "nivel": 1,
+    "texto": "O chipset deve ser integrado ao processador.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L023",
+    "secao": "Placa mãe",
+    "nivel": 1,
+    "texto": "Mínimo de 02 (dois) slots para memória do tipo DDR5.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L024",
+    "secao": "Placa mãe",
+    "nivel": 1,
+    "texto": "Deverá possuir chip de segurança TPM 2.0 ou superior, integrado à Placa Mãe.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L025",
+    "secao": "Fonte de Alimentação / Bateria",
+    "nivel": 1,
+    "texto": "Fonte de alimentação externa para corrente alternada com tensões de entrada de 100 à 240 VAC (+/- 10%).",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L026",
+    "secao": "Fonte de Alimentação / Bateria",
+    "nivel": 1,
+    "texto": "Frequência de operação 50hz - 60Hz - Com seleção automática de tensão.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L027",
+    "secao": "Fonte de Alimentação / Bateria",
+    "nivel": 1,
+    "texto": "Bateria interna recarregável com no mínimo 3 células e autonomia de no mínimo 4 horas.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L028",
+    "secao": "Interfaces",
+    "nivel": 1,
+    "texto": "No mínimo - 2 portas USB 2.0",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L029",
+    "secao": "Interfaces",
+    "nivel": 1,
+    "texto": "No mínimo - 1 porta USB 3.2 de 1ª geração",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L030",
+    "secao": "Interfaces",
+    "nivel": 1,
+    "texto": "No mínimo - 1 porta HDMI 1.4",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L031",
+    "secao": "Interfaces",
+    "nivel": 1,
+    "texto": "No mínimo - 1 porta Ethernet RJ-45 (1 Gbps), Na ausência de interface nativa, deverá ser fornecido, sem custo adicional, 01 (um) adaptador compatível (ex.: USB-C ou USB tipo A para RJ-45) capaz de operar em velocidade Gigabit (1 Gbps), sem prejuízo do quantitativo mínimo de portas USB exigidas neste termo.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L032",
+    "secao": "Interfaces",
+    "nivel": 1,
+    "texto": "Conexões de áudio e microfone",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L033",
+    "secao": "Interfaces",
+    "nivel": 1,
+    "texto": "No mínimo - 1 conector de saída headset e microfone (3,5mm), sendo aceito conector do tipo combo.",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L034",
+    "secao": "Interfaces",
+    "nivel": 1,
+    "texto": "1 porta para adaptador de energia",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L035",
+    "secao": "Conectividade",
+    "nivel": 1,
+    "texto": "Placa de rede local sem fio (WLAN) - WI-FI 6 (802.11ax) ou superior",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L036",
+    "secao": "Conectividade",
+    "nivel": 1,
+    "texto": "Rede local com fio (LAN) - Ethernet RJ-45 Gigabit 10/100/1000 Mbps",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L037",
+    "secao": "Conectividade",
+    "nivel": 1,
+    "texto": "Bluetooth",
+    "pagina": 5
+   },
+   {
+    "id": "item_2-L038",
+    "secao": "Sistema Operacional",
+    "nivel": 1,
+    "texto": "Cada equipamento deverá ser acompanhado de uma licença do Microsoft Windows 11 Pro x64 com atualização cumulativa mais recente ou superior com upgrade garantido de acordo com as regras da Microsoft, em Português do Brasil, com a respectiva chave de ativação gravada na memória flash da BIOS, reconhecida automaticamente na instalação do Sistema Operacional.",
+    "pagina": 6
+   },
+   {
+    "id": "item_2-L039",
+    "secao": "Dimensões",
+    "nivel": 1,
+    "texto": "Altura: 1,7cm a 2,0cm",
+    "pagina": 6
+   },
+   {
+    "id": "item_2-L040",
+    "secao": "Dimensões",
+    "nivel": 1,
+    "texto": "Largura: máxima de 35,85 cm",
+    "pagina": 6
+   },
+   {
+    "id": "item_2-L041",
+    "secao": "Dimensões",
+    "nivel": 1,
+    "texto": "Profundidade: máxima de 23,56 cm",
+    "pagina": 6
+   },
+   {
+    "id": "item_2-L042",
+    "secao": "Dimensões",
+    "nivel": 1,
+    "texto": "Peso: de 1,2 kg até 2,2 kg",
+    "pagina": 6
+   }
+  ]
+ },
+ "geral": {
+  "descricao": "Requisitos gerais aplicáveis aos dois itens",
+  "requisitos": [
+   {
+    "id": "geral-L001",
+    "secao": "Requisitos gerais aplicáveis aos itens",
+    "nivel": 1,
+    "texto": "Todos os equipamentos deverão ser novos, de primeiro uso, de linha corporativa, produzidos em série, vedada a entrega de equipamentos montados de forma artesanal ou com componentes de múltiplas origens não certificados.",
+    "pagina": 6
+   },
+   {
+    "id": "geral-L002",
+    "secao": "Requisitos gerais aplicáveis aos itens",
+    "nivel": 1,
+    "texto": "Todos os equipamentos deverão ser entregues em embalagens originais, individuais, lacradas e adequadas à proteção contra impactos, umidade e descargas eletrostáticas, acompanhados de cabos de força no padrão ABNT NBR 14136, manuais, documentação técnica e comprovação de garantia.",
+    "pagina": 6
+   },
+   {
+    "id": "geral-L003",
+    "secao": "Requisitos gerais aplicáveis aos itens",
+    "nivel": 1,
+    "texto": "Os equipamentos de cada item deverão manter homogeneidade de modelo, arquitetura e componentes principais, evitando variações que prejudiquem a padronização, a criação de imagem corporativa, a manutenção, o suporte técnico e a gestão de garantias.",
+    "pagina": 6
+   }
+  ]
+ }
+}
